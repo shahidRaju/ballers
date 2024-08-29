@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Grand Hotel';
+    src: url("{{ 'GrandHotel-Regular.woff2' | asset_url }}") format('woff2'),
+        url("{{ 'GrandHotel-Regular.woff' | asset_url }}") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@keyframes moveUpDown1 {
+    0%, 100% {
+      transform: translateY(0);
+    } 
+    50% {
+      transform: translateY(-8px);
+    }
+}
+.up-down-animation {
+    animation: moveUpDown1 1.5s ease-in-out infinite; 
+}
+@font-face {
+    font-family: 'ICBM SS-20';
+    src: url("{{ 'ICBMSS20.woff2' | asset_url }}") format('woff2'),
+        url("{{ 'ICBMSS20.woff' | asset_url }}") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ICBM SS-25';
+    src: url("{{ 'ICBMSS25.woff2' | asset_url }}") format('woff2'),
+        url("{{ 'ICBMSS25.woff' | asset_url  }}") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.mobile {
+    display: none;
+}
+.flex {
+    display: flex;
+}
+.title {
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 60px;
+}
+@media screen and (max-width:767px){
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}

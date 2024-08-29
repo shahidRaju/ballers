@@ -1,0 +1,101 @@
+{{ 'outdoor-gallery.css' | asset_url | stylesheet_tag }}
+
+<div class="outdoor-gallery">
+  <div class="page-width">
+    <div class="content">
+      <div class="gallery-content">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'outdoor_gallery_content' -%}
+            {%- if block.settings.item_image != blank -%}
+              <div class="gallery-item gallery-item--{{ forloop.index }}">
+                <img src="{{ block.settings.item_image |  image_url: width: '800x' }}" alt="">
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div class="gallery-card">
+        {%- if section.settings.center_image != blank -%}
+          <div class="gallery-center-image">
+            <img src="{{ section.settings.center_image |  image_url: width: '800x' }}" alt="">
+          </div>
+        {%- endif -%}
+        <div class="gallery-card-content">
+          {%- if section.settings.main_title != blank -%}
+            <h3 class="main-title">{{ section.settings.main_title }}</h3>
+          {%- endif -%}
+          {%- if section.settings.primary_text != blank -%}
+            <span class="primary-text">{{ section.settings.primary_text }}</span>
+          {%- endif -%}
+          {%- if section.settings.join_button != blank -%}
+            <a href="{{ section.settings.btn_url }}" class="join-button">{{ section.settings.join_button }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="background-svg">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2531" height="2500" viewBox="0 0 2531 2500" fill="none">
+      <g style="mix-blend-mode:overlay" opacity="0.15">
+      <path d="M2531 1180.47L1384.81 1232.11L2517.93 1062.01L2492.94 937.972L1379 1209.46L2456.71 824.274L2407.71 707.405L1368.84 1188.32L2349.78 602.917L2278.62 497.75L1354.62 1169.6L2201.12 406.399L2110.54 316.935L1337.04 1153.97L2016.53 242.345L1910.06 172.057L1316.71 1142.04L1803.05 116.944L1684.73 68.5511L1294.39 1134.19L1568.94 35.106L1443.36 10.4941L1271 1130.87L1323.21 0L1195.11 0L1247.39 1132.07L1075.18 12.9099L949.603 37.5974L1224.46 1137.89L834.495 73.3829L716.177 121.776L1203.05 1147.93L610.393 179.003L503.922 249.29L1184.1 1161.9L411.439 325.844L320.865 415.232L1168.28 1179.33L245.35 508.169L174.191 613.336L1156.2 1199.42L118.395 719.031L69.4011 835.9L1148.25 1221.46L35.5413 950.278L10.6242 1074.32L1144.89 1244.56L1.76781e-05 1193L1.95531e-05 1319.53L1146.11 1267.89L13.0701 1437.99L38.0636 1562.03L1152 1290.54L74.2928 1675.73L123.286 1792.6L1162.16 1311.68L181.223 1897.08L252.382 2002.25L1176.3 1330.4L329.885 2093.6L420.381 2183.06L1193.96 1346.03L514.47 2257.66L620.941 2327.94L1214.29 1357.96L727.947 2383.06L846.265 2431.45L1236.61 1365.74L962.061 2464.89L1087.64 2489.51L1260 1369.13L1207.79 2500H1335.89L1283.61 1367.85L1455.82 2487.09L1581.4 2462.4L1306.54 1362.11L1696.51 2426.62L1814.82 2378.22L1327.95 1352.07L1920.61 2321L2027.08 2250.71L1346.9 1338.03L2119.56 2174.16L2210.13 2084.69L1362.72 1320.66L2285.65 1991.83L2356.81 1886.66L1374.8 1300.58L2412.61 1780.97L2461.6 1664.1L1382.67 1278.54L2495.38 1549.72L2520.38 1425.68L1386.11 1255.44L2531 1307L2531 1180.47Z" fill="url(#paint0_radial_778_13)" style="mix-blend-mode:screen"/>
+      </g>
+      <defs>
+      <radialGradient id="paint0_radial_778_13" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1265.5 1250) scale(1265.5 1250)">
+      <stop offset="0.22" stop-color="#FF0000"/>
+      <stop offset="0.95" stop-color="#9EC4A2" stop-opacity="0.2"/>
+      </radialGradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Outdoor Gallery",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "center_image",
+      "label": "Center Image"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title"
+    },
+    {
+      "type": "text",
+      "id": "primary_text",
+      "label": "Primary Text"
+    },
+    {
+      "type": "text",
+      "id": "join_button",
+      "label": "Button"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Url"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "outdoor_gallery_content",
+      "name": "Outdoor Gallery Content",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "item_image",
+          "label": "Item Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Outdoor Gallery"
+    }
+  ]
+}
+{% endschema %}

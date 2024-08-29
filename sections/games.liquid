@@ -1,0 +1,104 @@
+{{ "games.css" | asset_url | stylesheet_tag }}
+
+<div class="games">
+    <div class="page-width">
+        <div class="wrapper">
+            {%- if section.settings.title != blank -%}
+                <h3 class="title">{{ section.settings.title }}</h3>
+            {%- endif -%}
+            <div class="card_grid-wrapper cards" js-card-items>
+                {%- for block in section.blocks -%}
+                    <div class="card_grid-item animated-card card eevee animated" js-card-item>
+                        {%- if block.settings.image -%}
+                            <div class="image">
+                                <img src="{{ block.settings.image | img_url: '400X' }}" alt="">
+                            </div>
+                        {%- endif -%}
+                        {%- if block.settings.title != blank -%}
+                            <h5 class="card_title">{{ block.settings.title }}</h5>
+                        {%- endif -%}
+                    </div>
+                {%- endfor -%}
+            </div>
+            <style class="hover"></style>
+            {%- if section.settings.button_label != blank -%}
+                <div js-load-more-btn class="btn">{{ section.settings.button_label }}</div>
+            {%- endif -%}
+        </div>
+    </div>
+    {%- if section.settings.top_right != blank -%}
+        <div class="overlay top-right up-down-animation">
+            <img src="{{ section.settings.top_right | img_url: '400X' }}" alt="">
+        </div>
+    {%- endif -%}
+    {%- if section.settings.left != blank -%}
+        <div class="overlay left up-down-animation">
+            <img src="{{ section.settings.left | img_url: '400X' }}" alt="">
+        </div>
+    {%- endif -%}
+    {%- if section.settings.bottom_right != blank -%}
+        <div class="overlay bottom-right up-down-animation">
+            <img src="{{ section.settings.bottom_right | img_url: '400X' }}" alt="">
+        </div>
+    {%- endif -%}
+</div>
+{% schema %}
+  {
+    "name": "Games",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button Label"
+        },
+        {
+          "type": "url",
+          "id": "btn_url",
+          "label": "Button Url"
+        },
+        {
+          "type": "image_picker",
+          "id": "top_right",
+          "label": "Top Right Overlay"
+        },
+        {
+          "type": "image_picker",
+          "id": "left",
+          "label": "Left Overlay"
+        },
+        {
+          "type": "image_picker",
+          "id": "bottom_right",
+          "label": "Bottom Right Overlay"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Card",
+            "type": "card",
+            "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image"
+                },
+                {
+                  "type": "text",
+                  "id": "title",
+                  "label": "Title"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Games"
+      }
+    ]
+  }
+{% endschema %}

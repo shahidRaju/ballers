@@ -1,0 +1,219 @@
+{
+  "sections": {
+    "about_page_banner_pqAKKq": {
+      "type": "about-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Vector_999b3161-14d0-41a0-bde1-0391af2d6186.png",
+        "title": "Why <span>Choose </span>Us?",
+        "description": "Enjoy hours of fun with premium facilities and service without breaking the bank."
+      }
+    },
+    "why-choose-us": {
+      "type": "why-choose-us",
+      "blocks": {
+        "facilities_detail_kpzAjm": {
+          "type": "facilities_detail",
+          "settings": {
+            "change_position": false,
+            "primary_title": "<p> Expert</p><p> Staff</p>",
+            "primary_text": "Our passionate and knowledgeable staff is here to assist you every step of the way, ensuring you have the best playing experience possible.",
+            "circle_image": "shopify://shop_images/Ellipse_798_1.png"
+          }
+        },
+        "facilities_detail_rgDU8r": {
+          "type": "facilities_detail",
+          "settings": {
+            "change_position": true,
+            "primary_title": "<p>Clean </p><p>and </p><p>Safe </p><p>Environment</p>",
+            "primary_text": "Your comfort and safety are our top priorities. We maintain a clean and well-maintained environment, so you can focus on what matters most – having a gala time!",
+            "circle_image": "shopify://shop_images/Ellipse_798.png"
+          }
+        },
+        "facilities_detail_i3NMhw": {
+          "type": "facilities_detail",
+          "settings": {
+            "change_position": false,
+            "primary_title": "<p>Community </p><p>Atmosphere</p>",
+            "primary_text": "BALLERS isn't just a place to play games – it's a community. Join our growing community and forge lasting friendships and memories.",
+            "circle_image": "shopify://shop_images/Ellipse_798_2.png"
+          }
+        }
+      },
+      "block_order": [
+        "facilities_detail_kpzAjm",
+        "facilities_detail_rgDU8r",
+        "facilities_detail_i3NMhw"
+      ],
+      "settings": {
+      }
+    },
+    "image_showcase_pRKGBU": {
+      "type": "image-showcase",
+      "blocks": {
+        "image_slide_QqLPDt": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6104.png"
+          }
+        },
+        "image_slide_p99iig": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6106.png"
+          }
+        },
+        "image_slide_qByPwP": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6105.png"
+          }
+        },
+        "image_slide_KVFEby": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6104.png"
+          }
+        },
+        "image_slide_cGztfq": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6105.png"
+          }
+        },
+        "image_slide_DzAWhn": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6106.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_QqLPDt",
+        "image_slide_p99iig",
+        "image_slide_qByPwP",
+        "image_slide_KVFEby",
+        "image_slide_cGztfq",
+        "image_slide_DzAWhn"
+      ],
+      "settings": {
+        "select_option": "rotate"
+      }
+    },
+    "content_with_button_overlay_YDPmUh": {
+      "type": "content-with-button-overlay",
+      "blocks": {
+        "info_text_wDybkz": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "arcade"
+          }
+        },
+        "info_text_M7fEaK": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "arcade"
+          }
+        },
+        "info_text_btfcMJ": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "soft play"
+          }
+        },
+        "info_text_EpHzgP": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "jungle gym"
+          }
+        },
+        "info_text_mbahNt": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "pickle ball"
+          }
+        },
+        "info_text_jyn9U3": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "box cricket"
+          }
+        },
+        "info_text_Ujk4NT": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "foosball"
+          }
+        },
+        "info_text_fbdfR8": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "ninja warrior"
+          }
+        },
+        "info_text_idKGT9": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "fun zone"
+          }
+        },
+        "info_text_LQhHLr": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "party area"
+          }
+        },
+        "info_text_NjaUJf": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "food"
+          }
+        },
+        "info_text_yeFyYA": {
+          "type": "info_text",
+          "settings": {
+            "info_text": "drinks"
+          }
+        }
+      },
+      "block_order": [
+        "info_text_wDybkz",
+        "info_text_M7fEaK",
+        "info_text_btfcMJ",
+        "info_text_EpHzgP",
+        "info_text_mbahNt",
+        "info_text_jyn9U3",
+        "info_text_Ujk4NT",
+        "info_text_fbdfR8",
+        "info_text_idKGT9",
+        "info_text_LQhHLr",
+        "info_text_NjaUJf",
+        "info_text_yeFyYA"
+      ],
+      "settings": {
+        "secondary_style": false,
+        "logo_position": "top",
+        "overlay_image": "shopify://shop_images/Group_1073715624_1.png",
+        "title": "One stop destination",
+        "text": "<p>We at BALLERS have something for everyone. From soft play area for toddlers to Jungle gym for the kids, arcade games and bowling for adults along with delicious food to satisfy all your cravings</p>",
+        "button_text": "",
+        "button_url": ""
+      }
+    },
+    "choose_us_newsletter_7pjTmQ": {
+      "type": "choose-us-newsletter",
+      "settings": {
+        "center_image": "shopify://shop_images/Group_1073714962.png",
+        "main_title": "Visit Us Today and let the games begin!",
+        "primary_text": "Visit BALLERS today and experience the adrenaline with one of a kind spark lane bowling alley, arcade games and much more.",
+        "join_button": "visit us today"
+      }
+    }
+  },
+  "order": [
+    "about_page_banner_pqAKKq",
+    "why-choose-us",
+    "image_showcase_pRKGBU",
+    "content_with_button_overlay_YDPmUh",
+    "choose_us_newsletter_7pjTmQ"
+  ]
+}

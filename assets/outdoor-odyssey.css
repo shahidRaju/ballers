@@ -1,0 +1,171 @@
+.outdoor-odyssey {
+    padding-top: 250px;
+    background-color: #17146B;
+    position: relative;
+    z-index: 1;
+}
+.outdoor-odyssey .wrapper {
+    padding-bottom: 20vw;
+    position: relative;
+   z-index: 1;
+}
+.outdoor-odyssey .banner-title {
+    max-width: 950px;
+    margin: 0 auto 20px;
+    font-family: ICBM SS-20;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 0.93;
+    text-align: center;
+    color: #FEC218;
+    font-style: normal;
+    text-shadow: 2px 2px 0px #857B7B99;
+}
+.outdoor-odyssey .banner-title p {
+    display: inline;
+    margin: 0;
+}
+.outdoor-odyssey .banner-title p:nth-child(2){
+    color: #fff;
+}
+.outdoor-odyssey .banner-text {
+    max-width: 916px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.37;
+    text-align: center;
+    color: #fdf0d2;
+    margin: 0 auto 14px;
+    letter-spacing: 0;
+}
+.outdoor-odyssey .banner-text p {
+    display: inline;
+}
+.outdoor-odyssey .bottom-text {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.22;
+    text-align: center;
+    color: #FDF0D2;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.outdoor-odyssey .background_svg {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.template-outdoor .outdoor-odyssey .background_svg {
+    width: 250%;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.outdoor-odyssey .background_svg svg {
+    animation: rotate 20s linear infinite;
+}
+.outdoor-odyssey {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1279px) {
+    .outdoor-odyssey .banner-title {
+        max-width: 824px;
+        font-size: 68px;
+    }
+    .outdoor-odyssey .banner-text {
+        max-width: 804px;
+        font-size: 14px;
+    }
+    .outdoor-odyssey .wrapper {
+        padding-bottom: 24vw;
+    }
+    .outdoor-odyssey .background_svg {
+        top: 90%;
+    }
+}
+@media screen and (max-width: 990px) {
+    .outdoor-odyssey {
+        padding: 146px 0 0;
+    }
+    .outdoor-odyssey .background_svg {
+        top: 100%;
+    }
+    .outdoor-odyssey .banner-title {
+        max-width: 650px;
+        font-size: 54px;
+    }
+    .outdoor-odyssey .banner-text {
+        max-width: 630px;
+        font-size: 12px;
+    }
+    .outdoor-gallery .content {
+        padding-top: 14vw;
+    }
+}
+
+@media screen and (min-width: 767px) {
+   
+    .template-outdoor .outdoor-odyssey {
+        margin-top: -76px;
+    }
+}
+@media screen and (min-width: 990px) {
+    .template-outdoor .outdoor-odyssey {
+        margin-top: -113px;
+    }
+}
+@media screen and (min-width: 1450px) {
+    .outdoor-odyssey .background_svg {
+        top: 104%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .outdoor-odyssey {
+        padding-top: 46px;
+    }
+    .outdoor-odyssey .background_svg {
+        top: 99%;
+    }
+    .outdoor-odyssey .banner-title {
+        max-width: 340px;
+        font-size: 36px;
+        line-height: 1.33;
+    }
+    .outdoor-odyssey .banner-text p {
+        display: block;
+        margin: 0 0 10px;
+    }
+    .outdoor-odyssey .banner-text p:last-child {
+        margin: 0;
+    }
+    .outdoor-odyssey .banner-text {
+        max-width: 256px;
+        font-size: 13px;
+    }
+    .outdoor-odyssey .bottom-text {
+        display: none;
+    }
+}
+@media screen and (max-width: 479px) {
+    .outdoor-odyssey .banner-text {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 389px) {
+    .outdoor-odyssey .banner-title {
+        font-size: 34px;
+    }
+}

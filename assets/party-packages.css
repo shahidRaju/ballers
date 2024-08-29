@@ -1,0 +1,210 @@
+.packages {
+    padding-block: 3.3vw 9.5vw;
+    background-color: #17146b;
+}
+.packages img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.packages .wrapper {
+    position: relative;
+    z-index: 1;
+}
+.packages .packages_content {
+    margin-bottom: 26px;
+}
+.packages .packages_title {
+    font-family: 'Grand Hotel';
+    font-size: 75px;
+    font-weight: 400;
+    line-height: 0.8;
+    text-align: center;
+    color: #fec218;
+    margin: 0 0 30px;
+    text-transform: capitalize;
+}
+.packages .packages_text {
+    font-family: Helvetica;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.34;
+    text-align: center;
+    color: #fdf0d2;
+    display: block;
+}
+.packages .packages_slide-title {
+    margin: 0;
+    font-family: "ICBM SS-20";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0.935;
+    color: #DB1C0B;
+    text-align: center;
+    text-transform: uppercase;
+}
+.packages .border_dashed {
+    display: block;
+    border-bottom: 2px dashed #17146B;
+    width: 100%;
+    margin: 20px 0;
+}
+.packages .packages_sub-wrapper {
+    position: relative;
+}
+.packages .packages_container {
+    position: unset;
+    overflow: hidden;
+    max-width: 95%;
+    padding-block: 14px;
+    margin: 0 auto;
+}
+.packages .packages_container .swiper-button-next {
+    max-width: 30px;
+    width: 100%;
+    right: -8px;
+}
+.packages .packages_container .swiper-button-prev {
+    max-width: 30px;
+    width: 100%;
+    left: -8px;
+}
+.packages .slide_item.swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+.packages .background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    padding: 34px 12px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80%;
+}
+.packages .swiper-slide:nth-child(3n + 1) .background-image{
+    transform: rotate(-6.16deg);
+}
+.packages .swiper-slide:nth-child(3n + 2) .background-image{
+    transform: rotate(4.04deg);
+}
+.packages .swiper-slide:nth-child(3n) .background-image{
+    transform: rotate(-1.91deg);
+}
+.packages .swiper-button-next:after,
+.swiper-button-prev:after {
+    content: '';
+}
+.packages .packages_slide-image {
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 222px;
+    aspect-ratio: 1 / 0.946;
+}
+.packages .packages_btn {
+    max-width: fit-content;
+    border: 1px solid #FDF0D2;
+    border-radius: 100px;
+    margin-top: 12px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.packages .packages_btn a {
+    font-family: "ICBM SS-20";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 18px;
+    display: block;
+    color: #FDF0D2;
+}
+.packages .bottom_svg {
+    max-width: 109px;
+}
+
+@media screen and (min-width: 1280px) and (max-width:1380px) {
+    .packages .packages_slide-title {
+        font-size: 26px;
+    }
+    .packages .background-image {
+        max-width: 78%;
+    }
+}
+@media screen and (max-width: 1279px) {
+    .packages .bottom_svg {
+        max-width: 60px;
+    }
+}
+@media screen and (max-width:990px) {
+    .packages .page-width {
+        padding: 0 2rem;
+    }
+    .packages {
+        padding-block: 5vw 9.5vw;
+    }
+    .packages .packages_slide-title {
+        font-size: 22px;
+    }
+    .packages .background-image {
+        max-width: 75%;
+    }
+}
+@media screen and (max-width:767px) {
+    .packages {
+        padding: 24px 0 45vw;
+    }
+    .packages .packages_container {
+        max-width: 100%;
+    } 
+    .packages .slide_item.swiper-slide {
+        width: 55%;
+        margin-right: 20px;
+    }
+    .packages .page-width {
+        padding: 0;
+    }
+    .packages .packages_content {
+        margin-bottom: 6px;
+    }
+    .packages .packages_title {
+        margin: 0 0 6px;
+        font-size: 40px;
+        line-height: 1.3;
+    }
+    .packages .packages_text {
+        font-size: 13px;
+        line-height: 1.231;
+    }
+    .packages .packages_slide-title {
+        font-size: 23.06px;
+        line-height: 1;
+    }
+    .packages .packages_btn {
+        margin: 7px auto 0;
+    }
+    .packages .packages_btn a {
+        font-size: 13px;
+        line-height: 1.31;
+        padding: 10px 15px;
+    }
+    .packages .bottom_svg {
+        display: none;
+    }
+    .packages .swiper-button-next,
+    .packages .swiper-button-prev {
+        display: none;
+    }
+}
+@media screen and (max-width: 389px) {
+    .packages .packages_slide-title {
+        font-size: 18px;
+    }
+}

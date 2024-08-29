@@ -1,0 +1,76 @@
+{{ 'page-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="page-banner">
+  <div class="wrapper">
+    {%- if section.settings.bg_image != blank -%}
+      <div class="bg-image desktop">
+        <img src="{{ section.settings.bg_image | image_url: width: '2000x'}}" alt="">
+      </div>
+    {%- endif -%}
+    {%- if section.settings.bg_image_mob != blank -%}
+      <div class="bg-image mobile">
+        <img src="{{ section.settings.bg_image_mob | image_url: width: '600X'}}" alt="">
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.banner_title != blank or section.settings.image != blank -%}
+      <div class="main-grid">
+        <div class="page-width">
+          <div class="image-with-content-wrap">
+            <div class="contents">
+              {%- if section.settings.banner_title != blank -%}
+                <h2 class="banner-title">{{ section.settings.banner_title }}</h2>
+              {%- endif -%}
+              {%- if section.settings.text != blank -%}
+                <p class="text">{{ section.settings.text }}</p>
+              {%- endif -%}
+            </div>
+            {%- if section.settings.image != blank -%}
+              <div class="image up-down-animation">
+                <img src="{{ section.settings.image | image_url: width: '800x' }}" alt="">
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Page banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background image"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image_mob",
+      "label": "Background image (Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "image"
+    },
+    {
+      "type": "text",
+      "id": "banner_title",
+      "label": "Title"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Page banner"
+    }
+  ]
+}
+{% endschema %}

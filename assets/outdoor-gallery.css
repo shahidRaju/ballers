@@ -1,0 +1,210 @@
+.outdoor-gallery {
+    background-color: #8B0B00;
+    padding-top: 7vw;
+    padding-bottom: 20vw;
+    position: relative;
+}
+.outdoor-gallery .background-svg {
+    left: 50%;
+    position: absolute;
+    top: -154%;
+    transform: translateX(-50%);
+    width: 200%;
+    overflow: hidden;
+}
+
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.outdoor-gallery .background-svg svg {
+    animation: rotate 20s linear infinite;
+}
+.outdoor-gallery img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.outdoor-gallery .content {
+    padding-top: 170px;
+}
+.outdoor-gallery .gallery-content {
+    --column-size: 19.4vw;
+    display: grid;
+    grid-template-columns: repeat(5, var(--column-size));
+    grid-auto-flow: column;
+    transition: grid-template-columns 500ms;
+    position: absolute;
+    top: -192px;
+    left: -3vw;
+    z-index: 1;
+    width: 103%;
+    overflow: auto;
+}
+.outdoor-gallery .gallery-content::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+  }
+.outdoor-gallery .gallery-item {
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    width: 28.8vw;
+    transition: all 0.5s ease-in;
+    border: 16px solid #FDF0D2;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+.outdoor-gallery .gallery-item:hover {
+    z-index: 2;
+}
+.outdoor-gallery .gallery-item:hover img {
+    transform: scale(2);
+    transition: all 0.2s ease-in-out;
+}
+.outdoor-gallery .gallery-card {
+    max-width: 624px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+.outdoor-gallery .gallery-card-content {
+    max-width: 488px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.outdoor-gallery .main-title {
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 6px;
+    color: #DB1C0B;
+    text-transform: capitalize;
+}
+.outdoor-gallery .primary-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0;
+    display: block;
+    color: #17146B;
+    margin: 0 0 16px;
+}
+.outdoor-gallery .join-button {
+    font-family: ICBM SS-20;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #17146B;
+    padding: 10px 23px;
+    border: 2px solid #17146B;
+    border-radius: 40px;
+    margin: 0 auto;
+    display: block;
+    max-width: fit-content;
+}
+@media screen and (min-width: 1441px) {
+    .outdoor-gallery .content {
+        padding-top: 15vw;
+    }
+}
+@media screen and (max-width: 1279px) {
+    .outdoor-gallery .gallery-item {
+        border: 10px solid #FDF0D2;
+    }
+    .outdoor-gallery .content {
+        padding-top: 8vw;
+    }
+    .outdoor-gallery .background-svg {
+        top: -151%;
+    }
+}
+@media screen and (max-width: 990px){
+    .outdoor-gallery .gallery-content {
+        top: -100px;
+    }
+    .outdoor-gallery .gallery-item {
+        border: 8px solid #FDF0D2;
+    }
+    .outdoor-gallery .content {
+        padding-top: 15vw;
+    }
+    .outdoor-gallery .background-svg {
+        top: -114%;
+    }
+}
+@media screen and (min-width: 1450px) {
+    .outdoor-gallery .background_svg {
+        top: -150%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .outdoor-gallery {
+        padding-top: 25vw;
+        padding-bottom: 32vw;
+    }  
+    .outdoor-gallery .background-svg {
+        top: -85%;
+    }
+    .outdoor-gallery .gallery-content {
+        left: -15vw;
+        width: 115%;
+    } 
+    .outdoor-gallery .gallery-item {
+        border: 6.4px solid #FDF0D2;
+        width: 39vw;
+    }
+    .outdoor-gallery .content {
+        padding-top: 22px;
+    }
+    .outdoor-gallery .gallery-content {
+        --column-size: 30vw;
+        grid-template-columns: repeat(4, var(--column-size));
+    }
+    .outdoor-gallery .gallery-item {
+        border: 6.64px solid #FDF0D2;
+    }
+    .outdoor-gallery .gallery-card {
+        max-width: 362px;
+    }
+    .outdoor-gallery .gallery-card-content {
+        max-width: 280px;
+    }
+    .outdoor-gallery .main-title {
+        font-size: 22px;
+    }
+    .outdoor-gallery .primary-text {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+    .outdoor-gallery .join-button {
+        font-size: 12px;
+        border: unset;
+        text-decoration: underline;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 479px) {
+    .outdoor-gallery .gallery-content {
+        top: -70px;
+    }
+    .outdoor-odyssey .wrapper {
+        padding-bottom: 26vw;
+    }
+}

@@ -1,0 +1,85 @@
+{
+  "sections": {
+    "about-page-banner": {
+      "type": "about-page-banner",
+      "settings": {
+        "image": "shopify://shop_images/Vector_999b3161-14d0-41a0-bde1-0391af2d6186.png",
+        "title": "<span>about</span>us",
+        "description": "BALLERS was born from a desire to elevate the arcade experience to new heights while also providing a wholesome range of activities for\nall age groups and interests."
+      }
+    },
+    "about_image_with_text_h9apBV": {
+      "type": "about-image-with-text",
+      "blocks": {
+        "block_zMPc3M": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_794.png"
+          }
+        },
+        "block_BhUG4L": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_795.png"
+          }
+        },
+        "block_q9yCfQ": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_796.png"
+          }
+        },
+        "block_xFm7kN": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_797.png"
+          }
+        },
+        "block_CyjDmR": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_794.png"
+          }
+        },
+        "block_VWeQj3": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_795.png"
+          }
+        },
+        "block_EN9w9E": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_796.png"
+          }
+        },
+        "block_kR6f4k": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/Ellipse_797.png"
+          }
+        }
+      },
+      "block_order": [
+        "block_zMPc3M",
+        "block_BhUG4L",
+        "block_q9yCfQ",
+        "block_xFm7kN",
+        "block_CyjDmR",
+        "block_VWeQj3",
+        "block_EN9w9E",
+        "block_kR6f4k"
+      ],
+      "settings": {
+        "gift_image": "shopify://shop_images/Group_1073715624.png",
+        "image": "shopify://shop_images/Group_1000000873_8e2a7929-1899-4f3e-aaf9-325ab904fa92.png",
+        "title": "redefine <span>the gaming </span>experience",
+        "description": "At BALLERS, we redefine the gaming experience by blending cutting-edge technology, immersive environments, lip-smacking food options and unparalleled service to create a premium destination for all ages. Our commitment to excellence ensures that every visit to BALLERS is an unforgettable adventure, where excitement, innovation, and entertainment converge."
+      }
+    }
+  },
+  "order": [
+    "about-page-banner",
+    "about_image_with_text_h9apBV"
+  ]
+}

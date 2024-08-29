@@ -1,0 +1,64 @@
+{{ 'image-showcase.css' | asset_url | stylesheet_tag }}
+
+<div class="image-showcase {{ section.settings.select_option }}">
+  <div class="wrapper">
+    <div class="grid-item">
+      <div class="swiper-container">
+        <div class="image-wrapper">
+          {%- for i in (1..12) -%}
+            {%- for block in section.blocks -%}
+              {%- if block.settings.image != blank -%}
+                <div class="image image-slide">
+                  <img
+                    src="{{ block.settings.image |  image_url: width: '1000x' }}"
+                    alt="{{  block.settings.image.alt }}"
+                  >
+                </div>
+              {%- endif -%}
+            {%- endfor -%}
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Image Showcase",
+  "blocks": [
+    {
+      "name": "image Slide",
+      "type": "image-slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "select",
+      "id": "select_option",
+      "label": "Select Option",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        },
+        {
+          "value": "rotate",
+          "label": "Rotate"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image Showcase"
+    }
+  ]
+}
+{% endschema %}

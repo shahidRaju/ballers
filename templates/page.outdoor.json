@@ -1,0 +1,65 @@
+{
+    "sections": {
+        "outdoor_odyssey_RUxqQg": {
+            "type": "outdoor-odyssey",
+            "settings": {
+                "banner_title": "<p>Adventure </p><p>Awaits with</p><p> Outdoor Sports!</p>",
+                "banner_text": "<p>Ready to level up your Box Cricket and Pickle ball experience that too in the city’s premium area? Take a seat and look no further - you have arrived! </p><p>Whether you're a seasoned player or just looking for some casual fun, our Box Cricket and Asphalt based Pickle Ball courts are the perfect place to unleash your skills. Gather your friends, form a team, and enjoy the adrenaline rush of hitting boundaries, taking wickets, out of court shots and much more in these exhilarating games.</p>",
+                "bottom_text": "There's no other place like Ballers!"
+            }
+        },
+        "outdoor_gallery_Jcq98Y": {
+            "type": "outdoor-gallery",
+            "blocks": {
+                "outdoor_gallery_content_L8dgwi": {
+                    "type": "outdoor_gallery_content",
+                    "settings": {
+                        "item_image": "shopify://shop_images/Ellipse_802_1.png"
+                    }
+                },
+                "outdoor_gallery_content_cCQaGW": {
+                    "type": "outdoor_gallery_content",
+                    "settings": {
+                        "item_image": "shopify://shop_images/Ellipse_803_1.png"
+                    }
+                },
+                "outdoor_gallery_content_jRdFch": {
+                    "type": "outdoor_gallery_content",
+                    "settings": {
+                        "item_image": "shopify://shop_images/Ellipse_804_1.png"
+                    }
+                },
+                "outdoor_gallery_content_HhEXBr": {
+                    "type": "outdoor_gallery_content",
+                    "settings": {
+                        "item_image": "shopify://shop_images/Ellipse_806_1.png"
+                    }
+                },
+                "outdoor_gallery_content_NNQPHR": {
+                    "type": "outdoor_gallery_content",
+                    "settings": {
+                        "item_image": "shopify://shop_images/Ellipse_805_1.png"
+                    }
+                }
+            },
+            "block_order": [
+                "outdoor_gallery_content_L8dgwi",
+                "outdoor_gallery_content_cCQaGW",
+                "outdoor_gallery_content_jRdFch",
+                "outdoor_gallery_content_HhEXBr",
+                "outdoor_gallery_content_NNQPHR"
+            ],
+            "settings": {
+                "center_image": "shopify://shop_images/Group_1073715712.png",
+                "main_title": "level up your joy",
+                "primary_text": "Welcome to a world of excitement, laughter, and endless entertainment. Get ready to create memories that will last a lifetime!",
+                "join_button": "join the club",
+                "btn_url": ""
+            }
+        }
+    },
+    "order": [
+        "outdoor_odyssey_RUxqQg",
+        "outdoor_gallery_Jcq98Y"
+    ]
+}

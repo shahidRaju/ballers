@@ -1,0 +1,155 @@
+.embrace-section img,
+.embrace-section svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.embrace-section img {
+    object-fit: cover;
+}
+.embrace-section .image_wrapper {
+    position: relative;
+}
+.embrace-section .image_wrapper .bg_svg {
+    position: absolute;
+    bottom: -15vh;
+    width: 100%;
+}
+.embrace-section {
+    position: relative;
+    background: #fdf0d2;
+    padding-bottom: 113px;
+}
+.embrace-section .bg_svg.mobile {
+    display: none;
+}
+.embrace-section .banner_content {
+    max-width: 881px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 61px;
+}
+.embrace-section .title {
+    font-family: 'ICBM SS-20';
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 0.93;
+    text-transform: uppercase;
+    text-align: center;
+    color: #17146B;
+    margin-bottom: 15px;
+    letter-spacing: 0;
+    text-shadow: 2px 2px 0px #857B7B99;
+}
+.embrace-section .banner_content .text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.35;
+    text-align: center;
+    color: #17146B;
+    max-width: 725px;
+    letter-spacing: 0;
+    margin: 0 auto;
+}
+.embrace-section .banner_content span {
+    color: #FEC218;
+}
+.embrace-section h1, h2, p {
+    margin: 0;
+}
+.embrace-section .overlay_image {
+    max-width: 361px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 39px;
+}
+@media screen and (min-width:1439px) {
+    .embrace-section .image_wrapper .bg_svg {
+        bottom: -9vh;
+    }    
+}
+@media screen and (max-width:1439px) {
+    .embrace-section .image_wrapper .bg_svg {
+        bottom: -11vh;
+    }
+    .embrace-section .overlay_image {
+        max-width: 280px;
+    }
+}
+@media screen and (max-width:1279px) {
+    .embrace-section .image_wrapper .bg_svg {
+        bottom: -7vh;
+    }
+    .embrace-section .title {
+        font-size: 50px
+    }
+    .embrace-section .banner_content .text {
+        font-size: 14px;
+        max-width: 635px;
+    }
+    .embrace-section .banner_content {
+        max-width: 690px;
+    }
+    .embrace-section .overlay_image {
+        max-width: 180px;
+    }
+}
+@media screen and (max-width:990px) {
+    .embrace-section .banner_content .text {
+        font-size: 13px;
+    }
+    .embrace-section .title {
+        font-size: 35px;
+    }
+    .embrace-section .banner_content {
+        max-width: 480px;
+    }
+    .embrace-section .overlay_image {
+        max-width: 150px;
+        margin-bottom: 17px;
+    }
+    .embrace-section .image_wrapper .bg_svg {
+        bottom: -4vh;
+    }
+}
+@media screen and (max-width:767px) {
+    .embrace-section .bg_svg {
+       display: none;
+    }
+    .embrace-section .bg_svg.mobile {
+        display: block;
+    }
+    .embrace-section .title {
+        font-size: 40px;
+        margin-bottom: 12px;
+        line-height: 1.2;
+    }
+    .embrace-section .overlay_image {
+        max-width: 83px;
+        margin-bottom: 12px;
+    }
+    .embrace-section .banner_content {
+        max-width: 337px;
+        padding: 30px 20px 0;
+    }
+    .embrace-section {
+        padding-bottom: 40px;
+    }
+    .embrace-section .banner_content .text {
+        max-width: 294px;
+        margin: 0 auto;
+        letter-spacing: 0;
+    }
+    .embrace-section .overlay_image {
+        max-width: 84px;
+    }
+    .embrace-section .image {
+        height: 37vh;
+    }
+}
+@media screen and (max-width:389px) {
+    .embrace-section .overlay_image {
+        max-width: 64px;
+    }
+}

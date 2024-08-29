@@ -1,0 +1,56 @@
+{{ 'home-page-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="home-page-banner">
+  <div class="page-width">
+    <div class="home-page-banner_wrapper">
+      <div class="home-page-banner_text-image-wrap">
+        {% if section.settings.frame_image != blank %}
+          <div class="home-page-banner_frame-image">
+            <img src="{{ section.settings.frame_image |  image_url: width: "1600x" }}" alt="">
+            <div class="home-page-banner_content-area">
+              {% if section.settings.title != blank %}
+                <h1 class="home-page-banner_title">{{ section.settings.title }}</h1>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .home-page-banner {
+    background: url({{section.settings.bg_image|image_url:width:'3500x'}});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+</style>
+{% schema %}
+{
+  "name": "HomePage Banner",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bg_image",
+      "label": "Background-Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "frame_image",
+      "label": "Frame Image"
+    },
+    {
+      "type": "html",
+      "id": "title",
+      "label": "Title",
+      "info": "Use '<span></span>' this to change the color of text. Means write text between these two tags"
+    }
+  ],
+  "presets": [
+    {
+      "name": "HomePage Banner"
+    }
+  ]
+}
+{% endschema %}

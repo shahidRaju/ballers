@@ -1,0 +1,307 @@
+{{ 'section-contact-form.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class=" section-contact-form color-{{ section.settings.color_scheme }} gradient">
+  <div class="background-svg desktop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="929" height="918" viewBox="0 0 929 918" fill="none">
+      <g opacity="0.34">
+      <path d="M928.391 433.103L507.96 452.049L923.597 389.643L914.429 344.134L505.829 443.74L901.14 302.419L883.168 259.541L502.1 435.984L861.917 221.205L835.815 182.62L496.886 429.114L807.387 149.104L774.164 116.281L490.437 423.381L739.679 88.9141L700.625 63.1262L482.98 419.004L661.374 42.9059L617.974 25.1508L474.793 416.124L575.499 12.8801L529.436 3.85017L466.214 414.905L485.363 0L438.374 0L457.551 415.348L394.385 4.73655L348.322 13.7942L449.14 417.481L306.099 26.9235L262.699 44.6786L441.29 421.165L223.897 65.6746L184.843 91.4624L434.337 426.289L150.919 119.549L117.696 152.345L428.533 432.688L89.9962 186.443L63.8945 225.027L424.104 440.056L43.4281 263.806L25.4569 306.684L421.188 448.144L13.0368 348.649L3.89704 394.158L419.954 456.62L6.48593e-06 437.701L7.17384e-06 484.125L420.403 465.179L4.7942 527.585L13.962 573.094L422.562 473.488L27.2512 614.809L45.2224 657.687L426.291 481.244L66.4738 696.023L92.5756 734.608L431.477 488.113L121.004 768.124L154.199 800.947L437.954 493.847L188.712 828.314L227.766 854.102L445.411 498.224L267.017 874.322L310.417 892.077L453.598 501.077L352.892 904.348L398.955 913.378L462.177 502.323L443.028 917.228H490.017L470.84 501.852L534.006 912.491L580.069 903.434L479.251 499.747L622.292 890.304L665.692 872.549L487.101 496.063L704.494 851.553L743.548 825.765L494.054 490.911L777.472 797.679L810.695 764.855L499.857 484.54L838.395 730.785L864.496 692.2L504.287 477.172L884.963 653.422L902.934 610.543L507.175 469.084L915.326 568.579L924.494 523.07L508.437 460.608L928.391 479.527L928.391 433.103Z" fill="url(#paint0_radial_810_14)" style="mix-blend-mode:screen"/>
+      </g>
+      <defs>
+      <radialGradient id="paint0_radial_810_14" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(464.195 458.614) scale(464.195 458.614)">
+      <stop offset="0.285" stop-color="#393684"/>
+      <stop offset="0.95" stop-color="#17146B"/>
+      </radialGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="background-svg mobile">
+    <svg xmlns="http://www.w3.org/2000/svg" width="453" height="453" viewBox="0 0 453 453" fill="none">
+      <g style="mix-blend-mode:overlay" opacity="0.6">
+      <path d="M213.901 1.98766e-05L223.258 205.146L192.437 2.33932L169.96 6.81267L219.154 206.185L149.358 13.297L128.182 22.0659L215.323 208.005L109.249 32.4354L90.1923 45.1714L211.931 210.549L73.6395 59.043L57.4287 75.2538L209.099 213.696L43.9128 92.0802L31.1767 111.136L206.938 217.334L21.1903 130.288L12.4214 151.465L205.515 221.329L6.3612 172.19L1.90151 194.667L204.913 225.515L-9.09604e-06 216.172L-8.21544e-06 239.099L205.132 229.742L2.33928 260.563L6.81264 283.04L206.185 233.846L13.297 303.642L22.0659 324.818L208.005 237.677L32.4353 343.751L45.1714 362.808L210.535 241.069L59.0429 379.36L75.2401 395.571L213.696 243.901L92.0802 409.087L111.136 421.823L217.334 246.062L130.288 431.81L151.465 440.579L221.329 247.485L172.19 446.639L194.667 451.098L225.515 248.087L216.172 453L239.099 453L229.742 247.868L260.563 450.661L283.039 446.187L233.846 246.815L303.642 439.703L324.818 430.934L237.677 244.995L343.751 420.565L362.808 407.829L241.069 242.465L379.36 393.957L395.571 377.76L243.901 239.304L409.087 360.92L421.823 341.864L246.062 235.666L431.81 322.712L440.579 301.535L247.471 231.671L446.639 280.81L451.098 258.333L248.087 227.485L453 236.828L453 213.901L247.854 223.258L450.661 192.437L446.187 169.961L246.815 219.154L439.703 149.358L430.934 128.182L244.995 215.323L420.565 109.249L407.829 90.1924L242.451 211.931L393.957 73.6395L377.746 57.4287L239.304 209.099L360.92 43.9129L341.864 31.1768L235.666 206.938L322.712 21.1904L301.535 12.4215L231.671 205.529L280.81 6.37489L258.333 1.90154L227.485 204.913L236.828 1.8736e-05L213.901 1.98766e-05Z" fill="url(#paint0_radial_810_15)" style="mix-blend-mode:screen"/>
+      </g>
+      <defs>
+      <radialGradient id="paint0_radial_810_15" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(226.5 226.5) rotate(-90) scale(226.5 226.5)">
+      <stop offset="0.635" stop-color="#9EC4A2"/>
+      <stop offset="0.95" stop-color="#9EC4A2" stop-opacity="0.2"/>
+      </radialGradient>
+      </defs>
+    </svg>
+  </div>
+  <div class="contact  page-width page-width--narrow section-{{ section.id }}-padding">
+    {%- if section.settings.main_title -%}
+      <h2 class="page-title">{{ section.settings.main_title }}</h2>
+    {%- else -%}
+      <h2 class="page-title">{{ page.title }}</h2>
+    {%- endif -%}
+    <div class="image-with-contents">
+      {%- if section.settings.image != blank -%}
+        <div class="overlay-image">
+          <img src="{{ section.settings.image | image_url:width: '1500x' }}" alt="">
+        </div>
+      {%- endif -%}
+      <div class="contents-wrap">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.info != blank -%}
+            <div class="icon-with-text">
+              <div class="icon">
+                {% assign handle = block.settings.icons %}
+                {% case handle %}
+                  {% when 'contact' %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                      <circle cx="17.5" cy="17.5" r="17.5" fill="#FDF0D2"/>
+                      <path d="M11.3182 8.18386C10.5103 8.61755 8.87523 10.4969 8.30777 11.6534C8.02885 12.222 8 12.3666 8 13.1569C8 13.8604 8.04809 14.1785 8.27892 14.8435C8.88484 16.6264 9.56771 17.7926 11.097 19.6237C12.3377 21.0983 14.8575 23.5655 16.0309 24.4425C18.8009 26.5243 21.4458 27.4206 23.0231 26.8134C23.8118 26.5146 24.8601 25.7629 25.8219 24.7895C27.0145 23.6041 27.2261 23.0836 26.7933 22.3608C26.5529 21.956 24.5908 20.0092 23.831 19.431C22.8596 18.6792 22.3787 18.5443 21.8112 18.8431C21.6574 18.9202 21.1669 19.3731 20.7148 19.855L19.8973 20.7417L19.4164 20.4911C17.9545 19.749 15.1749 16.9445 14.3863 15.4024L14.2035 15.0555L15.1076 14.2652C15.9444 13.5424 16.1079 13.3303 16.2714 12.7521C16.4156 12.2413 15.4923 10.9209 13.9054 9.34037C12.5396 7.9911 12.078 7.77907 11.3182 8.18386ZM13.0494 10.4776C13.5591 10.998 14.165 11.6727 14.3959 11.9907L14.8191 12.5497L13.9246 13.3785C13.0494 14.1881 12.7608 14.6025 12.7608 15.0555C12.7608 15.3832 13.3379 16.5204 13.915 17.3396C14.5498 18.2359 16.5118 20.202 17.5698 21.0019C18.897 22.0042 19.955 22.3801 20.5802 22.062C20.6956 22.0042 21.1669 21.5609 21.6189 21.079L22.446 20.1923L23.1577 20.7417C23.5521 21.0405 24.2542 21.6765 24.7158 22.1488L25.5718 23.0065L24.5812 23.9317C23.5809 24.8666 22.6672 25.4545 22.0036 25.5798C21.1669 25.734 18.7047 24.6353 16.9446 23.3053C14.9633 21.8211 11.6644 18.3034 10.6353 16.5686C10.164 15.7783 9.64465 14.4869 9.48115 13.7255C9.32726 12.9448 9.46191 12.4533 10.0871 11.557C10.6834 10.7089 11.7702 9.54276 11.9722 9.54276C12.0587 9.54276 12.5492 9.96682 13.0494 10.4776Z" fill="#17146B"/>
+                    </svg>
+                  {% when 'email' %}
+                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                      <circle cx="17.5" cy="17.5" r="17.5" fill="#FDF0D2"/>
+                      <path d="M8 17.5V24H17.5H27V17.5V11H17.5H8V17.5ZM23.3056 12.885C23.3056 12.9067 21.9967 13.8817 20.4028 15.0625L17.4894 17.1858L14.5972 15.0625C13.0033 13.8925 11.6944 12.9175 11.6944 12.8958C11.6944 12.8633 14.3122 12.8417 17.5 12.8417C20.6983 12.8417 23.3056 12.8633 23.3056 12.885ZM12.0956 15.42L13.7106 16.655L12.3067 18.1717C11.5361 19.0058 10.66 19.9592 10.3539 20.295L9.805 20.9125L9.79444 17.305V13.6975L10.1428 13.9467C10.3222 14.0767 11.2089 14.7483 12.0956 15.42ZM25.1844 19.06L25.1528 20.8475L23.2211 18.7242C22.1656 17.5542 21.3106 16.59 21.3211 16.5792C21.3422 16.5683 22.2078 15.9075 23.2528 15.1167L25.1528 13.6867L25.1844 15.485C25.195 16.4708 25.195 18.085 25.1844 19.06ZM16.2228 18.5183C17.4261 19.4067 17.5633 19.3958 18.83 18.4425C19.3683 18.0417 19.8222 17.7167 19.8433 17.7167C19.8644 17.7167 20.825 18.7133 21.9756 19.9375L24.0656 22.1583H17.4894H10.9133L13.0139 19.9592C14.175 18.7567 15.1778 17.7817 15.2306 17.8142C15.2939 17.8358 15.7372 18.1608 16.2228 18.5183Z" fill="#17146B"/>
+                    </svg>
+                  {% when 'location' %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
+                    <circle cx="17.5" cy="17.5" r="17.5" fill="#FDF0D2"/>
+                    <path d="M16.7712 8.09866C14.4562 8.57846 12.5249 10.4137 12.0332 12.6088C11.6253 14.4081 12.0811 16.939 13.1967 19.1821C13.4246 19.6259 13.5925 20.0218 13.5685 20.0458C13.5445 20.0578 13.0048 20.1897 12.369 20.3336C9.44221 20.9694 7.48702 22.0249 7.10317 23.1765C6.88726 23.8242 7.01921 24.6879 7.41504 25.2036C8.39864 26.4871 11.1935 27.5067 14.756 27.8905C16.7232 28.1065 20.9455 27.9865 22.7088 27.6746C26.6911 26.9549 28.8263 25.6475 28.8263 23.9322C28.8263 22.2529 26.7991 20.9814 22.9127 20.2137C22.5288 20.1297 22.229 20.0338 22.253 19.9978C24.52 15.4996 24.508 12.213 22.205 9.82595C21.8211 9.41812 21.1734 8.91433 20.7896 8.71041C19.626 8.08666 18.0307 7.84676 16.7712 8.09866ZM19.5541 9.80196C20.8136 10.2698 21.9171 11.4453 22.3009 12.7288C23.0446 15.1997 21.3893 19.482 18.3546 22.9846L17.8987 23.5123L17.4549 22.9846C15.8476 21.0653 14.5401 18.8582 13.8684 16.915C13.4486 15.6915 13.4246 15.4876 13.4126 14.2162C13.4126 12.9327 13.4366 12.7887 13.7604 12.117C14.84 9.92191 17.275 8.95031 19.5541 9.80196ZM15.3558 22.7087C15.8356 23.3444 16.6153 24.292 17.0951 24.8078L17.9707 25.7554L19.0503 24.4719C19.65 23.7642 20.3937 22.8166 20.7296 22.3608C21.4013 21.4132 21.3893 21.4252 22.9247 21.7131C25.2997 22.1689 27.3869 23.2005 27.3869 23.9202C27.3869 24.4719 26.0314 25.2996 24.3041 25.7914C22.2889 26.3792 21.2094 26.4991 17.9107 26.4991C14.6121 26.4991 13.5685 26.3912 11.5174 25.7914C9.80207 25.2996 8.43463 24.4719 8.43463 23.9202C8.43463 23.2125 10.1979 22.3128 12.6329 21.7731C14.4202 21.3772 14.3602 21.3652 15.3558 22.7087Z" fill="#17146B"/>
+                    <path d="M16.6524 11.3241C15.5369 11.8279 14.7932 13.1953 14.9611 14.4068C15.1051 15.4984 15.9567 16.5419 16.9403 16.8298C18.8475 17.4056 20.6708 16.2061 20.8747 14.2629C20.9947 13.1113 20.239 11.8039 19.1714 11.3241C18.5237 11.0242 17.2882 11.0242 16.6524 11.3241ZM18.7636 12.8115C19.0275 12.9794 19.2314 13.2673 19.3393 13.5791C19.4953 14.035 19.4953 14.1189 19.2914 14.5627C19.1714 14.8386 18.8955 15.1625 18.6916 15.2944C17.4441 16.0621 15.9207 14.7307 16.5445 13.4232C16.9523 12.5716 17.9839 12.2837 18.7636 12.8115Z" fill="#17146B"/>
+                    </svg>
+                {% endcase %}
+              </div>
+              <span class="text">{{ block.settings.info }}</span>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+    {%- if section.settings.heading != blank -%}
+      <h2 class="title title-wrapper--no-top-margin inline-richtext {{ section.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}">
+        {{ section.settings.heading }}
+      </h2>
+    {%- else -%}
+      <h2 class="visually-hidden">{{ 'templates.contact.form.title' | t }}</h2>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <p class="sub-text text">{{ section.settings.text }}</p>
+    {%- endif -%}
+    {%- liquid
+      assign contact_form_class = 'isolate'
+      if settings.animations_reveal_on_scroll
+        assign contact_form_class = 'isolate scroll-trigger animate--slide-in'
+      endif
+    -%}
+    {%- form 'contact', id: 'ContactForm', class: contact_form_class -%}
+      {%- if form.posted_successfully? -%}
+        <h2 class="form-status form-status-list form__message" tabindex="-1" autofocus>
+          {% render 'icon-success' %}
+          {{ 'templates.contact.form.post_success' | t }}
+        </h2>
+      {%- elsif form.errors -%}
+        <div class="form__message">
+          <h2 class="form-status caption-large text-body" role="alert" tabindex="-1" autofocus>
+            {% render 'icon-error' %}
+            {{ 'templates.contact.form.error_heading' | t }}
+          </h2>
+        </div>
+        <ul class="form-status-list caption-large" role="list">
+          <li>
+            <a href="#ContactForm-email" class="link">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </a>
+          </li>
+        </ul>
+      {%- endif -%}
+      <div class="contact__fields">
+        <div class="field">
+          <input
+            class="field__input"
+            autocomplete="name"
+            type="text"
+            id="ContactForm-name"
+            name="contact[{{ 'templates.contact.form.name' | t }}]"
+            value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+            placeholder="YOur Name"
+          >
+        </div>
+        <div class="field field--with-error">
+          <input
+            autocomplete="email"
+            type="email"
+            id="ContactForm-email"
+            class="field__input"
+            name="contact[email]"
+            spellcheck="false"
+            autocapitalize="off"
+            value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+            aria-required="true"
+            {% if form.errors contains 'email' %}
+              aria-invalid="true"
+              aria-describedby="ContactForm-email-error"
+            {% endif %}
+            placeholder="email address"
+          >
+          {%- if form.errors contains 'email' -%}
+            <small class="contact__field-error" id="ContactForm-email-error">
+              <span class="visually-hidden">{{ 'accessibility.error' | t }}</span>
+              <span class="form__message">
+                {%- render 'icon-error' -%}
+                {{- form.errors.translated_fields.email | capitalize }}
+                {{ form.errors.messages.email -}}
+              </span>
+            </small>
+          {%- endif -%}
+        </div>
+      </div>
+      <div class="field">
+        <textarea
+          rows="10"
+          id="ContactForm-body"
+          class="text-area field__input"
+          name="contact[{{ 'templates.contact.form.comment' | t }}]"
+          placeholder="Write your message"
+        >
+          {{- form.body -}}
+        </textarea>
+      </div>
+      <div class="contact__button">
+        <button type="submit" class="button">
+          {{ 'templates.contact.form.send' | t }}
+        </button>
+      </div>
+    {%- endform -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.contact-form.name",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "html",
+      "id": "main_title",
+      "label": "Page title"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Contact form",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon_with_info",
+      "name": "Icon with info",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "info",
+          "label": "Info"
+        },
+        {
+          "type": "select",
+          "id": "icons",
+          "options": [
+            {
+              "value": "contact",
+              "label": "Contact"
+            },
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "location",
+              "label": "Location"
+            }
+          ],
+          "default": "contact",
+          "label": "Icons info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.contact-form.presets.name"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,107 @@
+.about-page-banner {
+    background: linear-gradient(90deg, rgba(255, 254, 249, 0) 42.68%, rgba(255, 240, 215, 0.95) 55.74%, #FFE68D 70.05%, #FFDE66 99.98%);
+    padding-bottom: 5vw;
+}
+.about-page-banner_alpha {
+    width: 56%;
+    z-index: -1;
+}
+.about-page-banner img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.about-page-banner svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.about-page-banner_text-image-wrap {
+    align-items: center;
+}
+.about-page-banner_beta {
+    height: 100%;
+    width: 44%;
+}
+.about-page-banner_content-area {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 488px;
+    padding-bottom: 15vh;
+}
+.about-page-banner_title {
+    margin: 0 0 15px;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'ICBM SS-20';
+    color: #000000;
+}
+.about-page-banner_title span {
+    color: #FF0000;
+}
+.about-page-banner_description {
+    margin: 0 0;
+    font-size: 16px;
+    line-height: 1.375;
+    max-width: 340px;
+    color: #000000;
+    letter-spacing: 0;
+}
+@media screen and (max-width:1279px) {
+    .about-page-banner_content-area {
+        max-width: 380px;
+    }
+    .about-page-banner_title {
+        font-size: 62px;
+    }
+    .about-page-banner_description {
+        font-size: 15px;
+        max-width: 319px;
+    } 
+}
+@media screen and (max-width:990px){
+    .about-page-banner_content-area {
+        max-width: 308px;
+        padding-bottom: 8vh;
+    }
+    .about-page-banner_title {
+        font-size: 50px;
+        margin: 0 0 10px;
+    }
+    .about-page-banner_description {
+        font-size: 13px;
+        max-width: 277px;
+    }
+}
+@media screen and (max-width:767px) {
+    .about-page-banner {
+        background: linear-gradient(180deg, #fffef900 33.68%, #fff0d7f2 49.74%, #ffe68d 70.05%, #ffde66 99.98%);
+        padding-bottom: 18vw;
+    }
+    .about-page-banner_text-image-wrap {
+        flex-wrap: wrap;
+    }
+    .about-page-banner_alpha {
+        width: 100%;
+    }
+    .about-page-banner_beta {
+        width: 100%;
+        height: unset;
+    } 
+    .about-page-banner_title {
+        font-size: 48px;
+    }
+    .about-page-banner_content-area {
+        height: unset;
+        max-width: 300px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .about-page-banner_beta {
+        padding-bottom: 40px;
+    } 
+}

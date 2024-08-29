@@ -1,0 +1,421 @@
+{
+  "sections": {
+    "custom_richtext_rNtXDw": {
+      "type": "custom-richtext",
+      "settings": {
+        "left_image": "shopify://shop_images/Group_1073715668.png",
+        "center_image": "shopify://shop_images/Group_4.png",
+        "right_image": "shopify://shop_images/Group_1073715669.png",
+        "left_text": "the",
+        "right_text": "arcade",
+        "sub_text": "extravaganza",
+        "richtext": "<p>Dive into a treasure trove of arcade classics and modern favourites. From retro gems like Pin Ball and Air Hockey to cutting-edge titles like Monopoly, our diverse selection ensures there's something for every gamer to enjoy.</p><p>Rack up tickets and redeem them for exciting prizes at our prize redemption centre. From small trinkets to big-ticket items, there's a wide variety of rewards waiting to be claimed, making every visit to BALLERS even more rewarding.</p>",
+        "left_overlay": "shopify://shop_images/Group_6.png",
+        "right_overlay": "shopify://shop_images/Group_7.png"
+      }
+    },
+    "games_CDHtNK": {
+      "type": "games",
+      "blocks": {
+        "card_agcbGU": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_18.png",
+            "title": "Hyperpitch"
+          }
+        },
+        "card_U8jxTG": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6117_377e2dd9-7226-4adf-90ff-0c31569a6853.png",
+            "title": "Splash War 2p- Ball Shooting"
+          }
+        },
+        "card_Na8R46": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715791_1.png",
+            "title": ""
+          }
+        },
+        "card_XUgLgw": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_22_0eda5b74-d382-409f-a548-12e1411f816c.png",
+            "title": "Boardwalk Big Spin"
+          }
+        },
+        "card_MJUqJE": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715797_1_15ca9f49-4317-437c-845d-82554448bb06.png",
+            "title": ""
+          }
+        },
+        "card_GdAzhd": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6121_6_9884d24b-be68-46e6-80fd-707e00b8d70c.png",
+            "title": "Skee Ball Glow "
+          }
+        },
+        "card_WY4Mxe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6122_8.png",
+            "title": "Shooting Madness"
+          }
+        },
+        "card_YCmDqx": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715835.png",
+            "title": ""
+          }
+        },
+        "card_EE7tA6": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_19.png",
+            "title": "Ticket carnival"
+          }
+        },
+        "card_mTLt3z": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715795_2.png",
+            "title": ""
+          }
+        },
+        "card_LD7jGx": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715833_1.png",
+            "title": ""
+          }
+        },
+        "card_KECF8L": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_15.png",
+            "title": "super bike 3"
+          }
+        },
+        "card_6EUEWM": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_20.png",
+            "title": "Tomb Raider 65\""
+          }
+        },
+        "card_DitkBY": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6117_11.png",
+            "title": "pacman Royale Chompionship- 4P"
+          }
+        },
+        "card_icwtCb": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6122_12.png",
+            "title": "Fast Track EVO 2"
+          }
+        },
+        "card_abFLMt": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_16.png",
+            "title": " Pinball (James Bond"
+          }
+        },
+        "card_NA8cdJ": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715797_1_15ca9f49-4317-437c-845d-82554448bb06.png",
+            "title": ""
+          }
+        },
+        "card_7Adf8U": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6121_7.png",
+            "title": "Hit Green (Slim)"
+          }
+        },
+        "card_BXVfht": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6122_9.png",
+            "title": "Monopoly Roll N Go"
+          }
+        },
+        "card_cXXALD": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715834_e5ce7aaf-a6a0-4aea-afd0-81de8c96f2b7.png",
+            "title": ""
+          }
+        },
+        "card_Kt94rW": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_21.png",
+            "title": "Zombie Outbreak 2P- Water Shooting"
+          }
+        },
+        "card_7qDXPt": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715815_1.png",
+            "title": ""
+          }
+        },
+        "card_AYwKK7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6122_10.png",
+            "title": "cosmic crane"
+          }
+        },
+        "card_wzJTXx": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_17.png",
+            "title": "quick toss"
+          }
+        },
+        "card_Jxny9m": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_22.png",
+            "title": "sync pong"
+          }
+        },
+        "card_i7JwUg": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6117_12.png",
+            "title": "carnival cups"
+          }
+        },
+        "card_L8rtWf": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715791_1_fb9e4dcf-df85-44c6-b481-02447f5ddb06.png",
+            "title": ""
+          }
+        },
+        "card_REq3wX": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_18.png",
+            "title": "ring toss"
+          }
+        },
+        "card_NdGcFy": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_23.png",
+            "title": "Space Warp 66 SE"
+          }
+        },
+        "card_WAteDL": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6121_8.png",
+            "title": "dream ball"
+          }
+        },
+        "card_MfebmX": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6122_11.png",
+            "title": "snow ball"
+          }
+        },
+        "card_fjtEwe": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715820_1.png",
+            "title": ""
+          }
+        },
+        "card_a8nRVy": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715833_1.png",
+            "title": ""
+          }
+        },
+        "card_4aC4Wr": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715816_1.png",
+            "title": ""
+          }
+        },
+        "card_WywmCB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_24.png",
+            "title": "ball mania"
+          }
+        },
+        "card_t8yHYC": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_19.png",
+            "title": "Angy Bird Whacker"
+          }
+        },
+        "card_f3Jpag": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6121_9.png",
+            "title": "Sail fish"
+          }
+        },
+        "card_3Jx6Ga": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_20.png",
+            "title": "hop n stack"
+          }
+        },
+        "card_qhtQy7": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6117_13.png",
+            "title": "dicey jump"
+          }
+        },
+        "card_xBRXzB": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715797_1_15ca9f49-4317-437c-845d-82554448bb06.png",
+            "title": ""
+          }
+        },
+        "card_FGjVD3": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_26.png",
+            "title": "Magix Floor"
+          }
+        },
+        "card_94XXGr": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6117_14.png",
+            "title": "JetBall Alley"
+          }
+        },
+        "card_xaBwRN": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_25.png",
+            "title": "let’s disc"
+          }
+        },
+        "card_ghDVT4": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715832_1.png",
+            "title": ""
+          }
+        },
+        "card_enp3wH": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_27.png",
+            "title": "Hammer Fortune"
+          }
+        },
+        "card_XY3qyp": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Group_1073715817_1.png",
+            "title": ""
+          }
+        },
+        "card_mef8wX": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_28.png",
+            "title": "fantasy soccer"
+          }
+        },
+        "card_tjrQep": {
+          "type": "card",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6119_21.png",
+            "title": "boxer"
+          }
+        }
+      },
+      "block_order": [
+        "card_agcbGU",
+        "card_U8jxTG",
+        "card_Na8R46",
+        "card_XUgLgw",
+        "card_MJUqJE",
+        "card_GdAzhd",
+        "card_WY4Mxe",
+        "card_YCmDqx",
+        "card_EE7tA6",
+        "card_mTLt3z",
+        "card_LD7jGx",
+        "card_KECF8L",
+        "card_6EUEWM",
+        "card_DitkBY",
+        "card_icwtCb",
+        "card_abFLMt",
+        "card_NA8cdJ",
+        "card_7Adf8U",
+        "card_BXVfht",
+        "card_cXXALD",
+        "card_Kt94rW",
+        "card_7qDXPt",
+        "card_AYwKK7",
+        "card_wzJTXx",
+        "card_Jxny9m",
+        "card_i7JwUg",
+        "card_L8rtWf",
+        "card_REq3wX",
+        "card_NdGcFy",
+        "card_WAteDL",
+        "card_MfebmX",
+        "card_fjtEwe",
+        "card_a8nRVy",
+        "card_4aC4Wr",
+        "card_WywmCB",
+        "card_t8yHYC",
+        "card_f3Jpag",
+        "card_3Jx6Ga",
+        "card_qhtQy7",
+        "card_xBRXzB",
+        "card_FGjVD3",
+        "card_94XXGr",
+        "card_xaBwRN",
+        "card_ghDVT4",
+        "card_enp3wH",
+        "card_XY3qyp",
+        "card_mef8wX",
+        "card_tjrQep"
+      ],
+      "settings": {
+        "title": "Games you’ll find here!",
+        "button_label": "explore all games",
+        "btn_url": "",
+        "top_right": "shopify://shop_images/Group_564387e5-2131-4054-a1aa-ee09d4b4be9e.png",
+        "left": "shopify://shop_images/Group_3.png",
+        "bottom_right": "shopify://shop_images/Group_2.png"
+      }
+    }
+  },
+  "order": [
+    "custom_richtext_rNtXDw",
+    "games_CDHtNK"
+  ]
+}

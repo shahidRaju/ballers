@@ -1,0 +1,61 @@
+.image-showcase img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.image-showcase {
+    background: #17146b;
+}
+.image-showcase .wrapper {
+    background: #fec218;
+    padding-block: 29px;
+}
+.image-showcase.horizontal .swiper-container {
+    overflow-x:hidden;
+}
+.image-showcase.rotate .wrapper {
+    transform: rotate(3.12deg);
+    margin-left: -76px;
+    margin-right: -17px;
+    position: relative;
+    z-index: 2;
+}
+.image-showcase.rotate .grid-item {
+    overflow-x: hidden;
+}
+.image-showcase .image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.image-showcase .image-wrapper {
+    animation: scroll 20s linear infinite;
+}
+.image-showcase .image-slide {
+    max-width: 312px;
+    min-width: 312px;
+    margin-right: 28px;
+    border-radius: 24px;
+    aspect-ratio: 1;
+    overflow: hidden;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(-100%)}
+}
+
+@media screen and (max-width:767px) {
+    .image-showcase .wrapper {
+        padding-block: 13px;
+    } 
+    .image-showcase .image-wrapper {
+        animation: scroll 10s linear infinite;
+    }
+    .image-showcase .image-slide {
+        max-width: 144px;
+        min-width: 144px;
+        margin-right: 12px;
+        border-radius: 12px;
+    }
+}

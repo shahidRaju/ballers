@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "home_page_banner_zb8mLk": {
+      "type": "home-page-banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/Group_1073714943.png",
+        "frame_image": "shopify://shop_images/Banner-Loop_34830abd-65f5-46cf-b112-daa452cfeca3.gif",
+        "title": "From <span> Pins</span> \nto <span>Pixel</span>!"
+      }
+    },
+    "image_with_text_overlay_7LWCLk": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "image_with_text_ELiqQN": {
+          "type": "image-with-text",
+          "settings": {
+            "image": "shopify://shop_images/Lets-Bowl-Loop_a43a1c66-6cd2-4047-b2a0-fa13a4f1bc06.gif",
+            "image_left": "shopify://shop_images/Group_1073715711.png",
+            "title": "bowling Bonanza!!",
+            "text": "<p>Are you ready to roll your way to fun and excitement? Look no further than BALLERS, where strikes, spares, and unforgettable memories await! Step into our world of bowling and experience the thrill of knocking down pins like a pro</p>",
+            "button_text": "explore now",
+            "button_url": "#",
+            "checked": false,
+            "image_overlay": "shopify://shop_images/Clip_path_group.png",
+            "image_position": "top-to-right",
+            "image_position_mobile": "top-to-right",
+            "image_overlay_width": 144,
+            "image_overlay_mobile": 45
+          }
+        },
+        "image_with_text_TGEyLG": {
+          "type": "image-with-text",
+          "settings": {
+            "image": "shopify://shop_images/New-Arcade-Loop_31c38674-785b-4628-a730-85e7ab495045.gif",
+            "title": "Arcade Extravaganza",
+            "text": "<p>Dive into a treasure trove of arcade classics and modern favourites. From retro gems like Pin Ball and Air Hockey to cutting-edge titles like Monopoly, our diverse selection ensures there's something for every gamer to enjoy.</p>",
+            "button_text": "explore now",
+            "button_url": "#",
+            "checked": true,
+            "image_overlay": "shopify://shop_images/Group_1073714950.png",
+            "image_position": "top-to-left",
+            "image_position_mobile": "bottom-to-right",
+            "image_overlay_width": 246,
+            "image_overlay_mobile": 102
+          }
+        },
+        "image_with_text_EQgtN7": {
+          "type": "image-with-text",
+          "settings": {
+            "image": "shopify://shop_images/New-Time-to-Eat-Loop_cbdf41e6-1971-4c8c-aeb8-b848eb4a045b.gif",
+            "title": "Party Packages",
+            "text": "<p>From power packed birthday parties to off-beat corporate events, BALLERS can be your one stop destination. Whatever the occasion, we will help you host the most fun filled parties.</p>",
+            "button_text": "explore now",
+            "button_url": "#",
+            "checked": false,
+            "image_overlay": "shopify://shop_images/Group_1000000873.png",
+            "image_position": "bottom-to-right",
+            "image_position_mobile": "bottom-to-left",
+            "image_overlay_width": 225,
+            "image_overlay_mobile": 102
+          }
+        }
+      },
+      "block_order": [
+        "image_with_text_ELiqQN",
+        "image_with_text_TGEyLG",
+        "image_with_text_EQgtN7"
+      ],
+      "settings": {}
+    },
+    "gallery_with_images_gQ37zd": {
+      "type": "gallery-with-images",
+      "blocks": {
+        "gallery_overlay_img_dMRAdL": {
+          "type": "gallery_overlay_img",
+          "settings": {
+            "gallery_item_image": "shopify://shop_images/Ellipse_794.png"
+          }
+        },
+        "gallery_overlay_img_FAd8Yr": {
+          "type": "gallery_overlay_img",
+          "settings": {
+            "gallery_item_image": "shopify://shop_images/Ellipse_795.png"
+          }
+        },
+        "gallery_overlay_img_mNe9wN": {
+          "type": "gallery_overlay_img",
+          "settings": {
+            "gallery_item_image": "shopify://shop_images/Ellipse_796.png"
+          }
+        },
+        "gallery_overlay_img_zXfMmX": {
+          "type": "gallery_overlay_img",
+          "settings": {
+            "gallery_item_image": "shopify://shop_images/Ellipse_797.png"
+          }
+        }
+      },
+      "block_order": [
+        "gallery_overlay_img_dMRAdL",
+        "gallery_overlay_img_FAd8Yr",
+        "gallery_overlay_img_mNe9wN",
+        "gallery_overlay_img_zXfMmX"
+      ],
+      "settings": {
+        "gallery_image_1": "shopify://shop_images/Group_1073715706.png",
+        "gallery_image_2": "shopify://shop_images/Frame_1073715699_1.png",
+        "center_image": "shopify://shop_images/Group_1073715712.png",
+        "main_title": "level up your joy",
+        "primary_text": "Welcome to a world of excitement, laughter, and endless entertainment. Get ready to create memories that will last a lifetime!",
+        "join_button": "join the club"
+      }
+    }
+  },
+  "order": [
+    "home_page_banner_zb8mLk",
+    "image_with_text_overlay_7LWCLk",
+    "gallery_with_images_gQ37zd"
+  ]
+}

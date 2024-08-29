@@ -1,0 +1,81 @@
+{
+  "sections": {
+    "embrace_section_cXKFLr": {
+      "type": "embrace-section",
+      "settings": {
+        "image_banner": "shopify://shop_images/Rectangle_6130_1.png",
+        "title": "Embrace Joy - <span>Laugh, Learn, and Play</span>",
+        "text": "<p>With utmost priority of kids’ safety, we offer the most innovative and engaging experience for the kids to play their hearts out. Our Soft play area and Jungle Gym promises a delightful and memorable experience for children and their friends. Parents can relax or immerse themselves in other fun activities while their children explore these fun-filled areas under the care of our experts.</p>",
+        "overlay_image": "shopify://shop_images/Group_1073714957.png"
+      }
+    },
+    "image_showcase_pRKGBU": {
+      "type": "image-showcase",
+      "blocks": {
+        "image_slide_QqLPDt": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6104.png"
+          }
+        },
+        "image_slide_p99iig": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6106.png"
+          }
+        },
+        "image_slide_qByPwP": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6105.png"
+          }
+        },
+        "image_slide_KVFEby": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6104.png"
+          }
+        },
+        "image_slide_cGztfq": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6105.png"
+          }
+        },
+        "image_slide_DzAWhn": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6106.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_QqLPDt",
+        "image_slide_p99iig",
+        "image_slide_qByPwP",
+        "image_slide_KVFEby",
+        "image_slide_cGztfq",
+        "image_slide_DzAWhn"
+      ],
+      "settings": {
+        "select_option": "horizontal"
+      }
+    },
+    "content_with_button_overlay_zK78mL": {
+      "type": "content-with-button-overlay",
+      "settings": {
+        "logo_position": "center",
+        "overlay_image": "shopify://shop_images/Group_1073715624_1.png",
+        "title": "Host the most fun parties",
+        "text": "<p>Bring your little ones to BALLERS and watch as they laugh, learn, and play in our soft play area designed just for them. Host the most fun parties for your kids with our party packages that include exclusive use of the soft play area, Jungle gym, and delicious food.</p>",
+        "button_text": "inquire now",
+        "button_url": ""
+      }
+    }
+  },
+  "order": [
+    "embrace_section_cXKFLr",
+    "image_showcase_pRKGBU",
+    "content_with_button_overlay_zK78mL"
+  ]
+}

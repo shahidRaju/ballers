@@ -1,0 +1,159 @@
+.choose-us-newsletter {
+    padding-top: 100px;
+    padding-bottom: 18vw;
+    background-color: #8b0b00;
+    position: relative;
+}
+.choose-us-newsletter img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.choose-us-newsletter svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.choose-us-newsletter .newsletter-card {
+    max-width: 776px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    z-index: 1;
+}
+.choose-us-newsletter .newsletter-card-content {
+    max-width: 642px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.choose-us-newsletter .main-title {
+    margin: 0 0 15px;
+    color: #db1c0b;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+.choose-us-newsletter .primary-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: center;
+    letter-spacing: 0;
+    display: block;
+    color: #17146B;
+    margin: 0 0 19px;
+    padding: 0 25px;
+}
+.choose-us-newsletter .join-button {
+    font-family: ICBM SS-20;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #17146B;
+    padding: 10px 23px;
+    border: 2px solid #17146B;
+    border-radius: 40px;
+    margin: 0 auto;
+    display: block;
+    max-width: fit-content;
+}
+.choose-us-newsletter .food-icon {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 100%;
+    max-width: 21vw;
+    z-index: 1;
+}
+.choose-us-newsletter .background_svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110%;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.choose-us-newsletter .background_svg svg {
+    animation: rotate 20s linear infinite;
+}
+@media screen and (max-width: 1279px) {
+   .choose-us-newsletter .newsletter-card {
+        max-width: 690px;
+   }
+   .choose-us-newsletter .newsletter-card-content {
+        max-width: 570px;
+    }
+   .choose-us-newsletter .main-title {
+        font-size: 42px;
+    }
+   .choose-us-newsletter .primary-text {
+        font-size: 16px;
+    }
+   .choose-us-newsletter .join-button {
+        font-size: 18px;
+    }
+    .choose-us-newsletter .food-icon {
+        top: -50px;
+    }
+}
+@media screen and (max-width: 990px) {
+    .choose-us-newsletter .newsletter-card {
+        max-width: 540px;
+    }
+    .choose-us-newsletter .newsletter-card-content {
+        max-width: 450px;
+    }
+    .choose-us-newsletter .main-title {
+        font-size: 32px;
+    }
+    .choose-us-newsletter .primary-text {
+        font-size: 12px;
+    }
+    .choose-us-newsletter .join-button {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .choose-us-newsletter {
+        padding-top: 42px;
+        padding-bottom: 30vw;
+    }
+    .choose-us-newsletter .food-icon {
+        top: -28px;
+    }
+    .choose-us-newsletter .newsletter-card {
+        max-width: 360px;
+    }
+    .choose-us-newsletter .newsletter-card-content {
+        max-width: 290px;
+    }
+    .choose-us-newsletter .main-title {
+        font-size: 21px;
+        margin: 0 0 8px;
+    }
+    .choose-us-newsletter .primary-text {
+        font-size: 13px;
+        margin: 0 0 11px;
+        padding: 0 3px;
+    }
+    .choose-us-newsletter .join-button {
+        font-size: 12px;
+        padding: 0;
+        border: none;
+        text-decoration: underline;
+    }
+}

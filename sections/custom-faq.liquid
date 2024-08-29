@@ -1,0 +1,107 @@
+{{ "custom-faq.css" | asset_url | stylesheet_tag }}
+<div class="custom-faq" js-accordion-item>
+  <div class="page-width">
+    <div class="wrapper">
+      <div class="grit-item">
+        {%- if section.settings.title != blank -%}
+          <h1 class="title">{{ section.settings.title }}</h1>
+        {%- endif -%}
+        <div class="faq-content_wrap">
+          {%- for block in section.blocks -%}
+            <div class="faq__text_with--icon">
+              <div class="text_icon flex" js-accordion-header>
+                {%- if block.settings.sub_title != blank -%}
+                  <h2 class="sub_title">{{ block.settings.sub_title }}</h2>
+                {%- endif -%}
+                {%- if block.settings.sub_title != blank -%}
+                  <div class="icon_wrapper">
+                    <div class="icon-plus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16"  height="15" viewBox="0 0 16 15" fill="none">
+                        <path d="M0.9375 5.37695H6.19629V0.103516H9.77051V5.37695H15.0586V8.95117H9.77051V14.1953H6.19629V8.95117H0.9375V5.37695Z" fill="#FDF0D2" />
+                      </svg>
+                    </div>
+                    <div class="icon-munis">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
+                        <path d="M8.30566 0.237305V4.32422H0.527344V0.237305H8.30566Z" fill="#FDF0D2" />
+                      </svg>
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+              {%- if block.settings.text != blank -%}
+                <div class="content_wrap" js-accordion-panel >
+                    <div class="text panel__inner">{{ block.settings.text }}</div>
+                </div>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+const accordionItems = document.querySelectorAll('[js-accordion-item]');
+if (accordionItems.length) {
+  const accordionButtons = document.querySelectorAll('[js-accordion-header]');
+  accordionButtons.forEach((button) => {
+    button.addEventListener('click', function () {
+      const accordionItem = this.parentElement;
+      const accordionPanel = accordionItem.querySelector('[js-accordion-panel]');
+      const height = accordionPanel.querySelector('.panel__inner').clientHeight;
+      console.log(height)
+      const isOpens = accordionItem.classList.contains('active');
+      accordionItems.forEach((accordion) => {
+        accordion.classList.remove('active');
+        if (accordion.querySelector('[js-accordion-panel]')) {
+          accordion.querySelector('[js-accordion-panel]').style.height = 0;
+        }
+      });
+
+      if (!isOpens) {
+        accordionItem.classList.add('active');
+        accordionPanel.style.height = `${height}px`;
+      } else {
+        accordionItem.classList.remove('active');
+        }        
+    });
+  });
+}
+
+
+</script>
+{% schema %}
+  {
+    "name": "FAQ Section",
+    "blocks": [
+      {
+        "name": "Faq block",
+        "type": "text-with-icon",
+        "settings": [
+          {
+            "type": "text",
+            "id": "sub_title",
+            "label": "Title"
+          }, {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "info": "Use '<span></span>' this to change the color of text. Means write text between these two tags"
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ Section"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,141 @@
+{
+  "sections": {
+    "page_banner_DRMzrc": {
+      "type": "page-banner",
+      "settings": {
+        "bg_image": "shopify://shop_images/Vector_3.png",
+        "bg_image_mob": "shopify://shop_images/Vector_4.png",
+        "image": "shopify://shop_images/Group_1073714969_6f737c54-548c-4f08-8c40-dde124f95679.png",
+        "banner_title": "bowling bonanza",
+        "text": "Are you ready to roll your way to fun and excitement? Look no further than BALLERS, where strikes, spares, and unforgettable memories await!"
+      }
+    },
+    "sliding_text_bAEagF": {
+      "type": "sliding-text",
+      "blocks": {
+        "info_7gMWfA": {
+          "type": "info",
+          "settings": {
+            "text": "The excitement never ends and every roll is a chance for fun!"
+          }
+        },
+        "info_bp9KwA": {
+          "type": "info",
+          "settings": {
+            "text": "The excitement never ends and every roll is a chance for fun!"
+          }
+        },
+        "info_qa3WEc": {
+          "type": "info",
+          "settings": {
+            "text": "The excitement never ends and every roll is a chance for fun!"
+          }
+        },
+        "info_LGCA9p": {
+          "type": "info",
+          "settings": {
+            "text": "The excitement never ends and every roll is a chance for fun!"
+          }
+        },
+        "info_dzGxLC": {
+          "type": "info",
+          "settings": {
+            "text": "The excitement never ends and every roll is a chance for fun!"
+          }
+        },
+        "info_7Ld9Wz": {
+          "type": "info",
+          "settings": {
+            "text": "The excitement never ends and every roll is a chance for fun!"
+          }
+        }
+      },
+      "block_order": [
+        "info_7gMWfA",
+        "info_bp9KwA",
+        "info_qa3WEc",
+        "info_LGCA9p",
+        "info_dzGxLC",
+        "info_7Ld9Wz"
+      ],
+      "settings": {
+      }
+    },
+    "collapsible_content_iNJKCL": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_qVVULK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "State-of-the-Art Bowling Lanes",
+            "row_content": "<p>BALLERS is the ideal destination for family fun! Bring the kids along for a day of laughter and friendly competition. With lightweight bowling balls, bumper lanes, and specially designed kids play area, everyone can enjoy the excitement of bowling.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_G8bUQt": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "party packages",
+            "row_content": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex, tenetur nesciunt, totam quod quibusdam qui ducimus quo ipsam numquam quaerat maiores eius repudiandae voluptatibus consequatur iusto commodi odit voluptate?</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_pdeezz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "row_content": "<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam ex, tenetur nesciunt, totam quod quibusdam qui ducimus quo ipsam numquam quaerat maiores eius repudiandae voluptatibus consequatur iusto commodi odit voluptate?</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_tHYe6p": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Full-Service Snack Bar and Food Court",
+            "row_content": "<p>BALLERS is the ideal destination for family fun! Bring the kids along for a day of laughter and friendly competition. With lightweight bowling balls, bumper lanes, and specially designed kids play area, everyone can enjoy the excitement of bowling.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_qVVULK",
+        "collapsible_row_G8bUQt",
+        "collapsible_row_pdeezz",
+        "collapsible_row_tHYe6p"
+      ],
+      "settings": {
+        "layout": "none",
+        "color_scheme": "scheme-5",
+        "container_color_scheme": "scheme-5",
+        "open_first_collapsible_row": false,
+        "title": "why <span>BOWL</span> with <span>us?</span>",
+        "desktop_layout": "image_first",
+        "padding_top": 90,
+        "padding_bottom": 0
+      }
+    },
+    "custom_video_section_qBt7dc": {
+      "type": "custom-video-section",
+      "settings": {
+        "heading_size": "h1",
+        "enable_video_looping": true,
+        "video": "shopify://files/videos/4841205-uhd_4096_2160_25fpsd.mov",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "title": "Strikes, laughter, and fun",
+        "text": "Step into our world of bowling and experience the thrill of knocking down pins like a pro.",
+        "link_text": "book us now",
+        "link": "",
+        "full_width": false,
+        "color_scheme": "",
+        "padding_top": 72,
+        "padding_bottom": 308
+      }
+    }
+  },
+  "order": [
+    "page_banner_DRMzrc",
+    "sliding_text_bAEagF",
+    "collapsible_content_iNJKCL",
+    "custom_video_section_qBt7dc"
+  ]
+}

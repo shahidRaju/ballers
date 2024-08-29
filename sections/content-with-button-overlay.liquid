@@ -1,0 +1,105 @@
+{{ 'content-with-button-overlay.css' | asset_url | stylesheet_tag }}
+
+<div class="content-with-button-overlay {{ section.settings.logo_position }} {% if section.settings.secondary_style %}secondary-style{% endif %}" id="id_{{ section.id }}">
+  <div class="page-width">
+    <div class="content-with_wrapper">
+      <div class="grid-item">
+        {%- if section.settings.overlay_image != blank -%}
+          <div class="overlay-image up-down-animation">
+            <img src="{{ section.settings.overlay_image |  image_url: width: 167  }}" alt="">
+          </div>
+        {%- endif -%}
+        <div class="content">
+          {%- if section.settings.title != blank -%}
+            <h2 class="title">{{ section.settings.title }}</h2>
+          {%- endif -%}
+          {%- if section.settings.text != blank -%}
+            <div class="text">{{ section.settings.text }}</div>
+          {%- endif -%}
+          <div class="button_Wrap">
+            {%- if section.settings.button_text != blank -%}
+              <a href="{{ section.settings.button_url }}" class="button_text">{{ section.settings.button_text }}</a>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+      <div class="content-with-button_info-wrap">
+        <div class="content-with-button_info flex">
+          {%- for block in section.blocks -%}
+            <div class="info_wrapper">
+              {%- if block.settings.info_text != blank -%}
+                <span class="info_title">{{ block.settings.info_text }}</span>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Content With Overlay",
+    "blocks": [
+      {
+        "type": "info_text",
+        "name": "Info Title",
+        "settings": [
+          {
+            "type": "text",
+            "id": "info_text",
+            "label": "Title"
+          }
+        ]
+      }
+    ],
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "secondary_style",
+        "label": "Secondary style"
+      },
+      {
+        "type": "select",
+        "id": "logo_position",
+        "label": "Logo Position",
+        "options": [
+          {
+            "label": "Top",
+            "value": "top"
+          }, {
+            "label": "Center",
+            "value": "center"
+          }
+        ]
+      },
+      {
+        "type": "image_picker",
+        "id": "overlay_image",
+        "label": "Overlay Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }, {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      }, {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button"
+      }, {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Content With Overlay"
+      }
+    ]
+  }
+{% endschema %}

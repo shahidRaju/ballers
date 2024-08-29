@@ -1,0 +1,104 @@
+{{ 'gallery-with-images.css' | asset_url | stylesheet_tag }}
+
+<div class="gallery-with-images">
+  <div class="full-width">
+    <div class="wrapper">
+      {%- if section.settings.gallery_image_1 != blank or section.settings.gallery_image_2 -%}
+        <div class="gallery-image gallery-image_desk">
+          <img src="{{ section.settings.gallery_image_1 |  image_url: width: '3000x' }}" alt="">
+        </div>
+        <div class="gallery-image gallery-image_mob">
+          <img src="{{ section.settings.gallery_image_2 |  image_url: width: '1800x' }}" alt="">
+        </div>
+      {%- endif -%}
+      <div class="gallery-overlay__image-wrap">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'gallery_overlay_img' -%}
+            {%- if block.settings.gallery_item_image != blank -%}
+              <div class="gallery-overlay_image gallery-overlay_img--{{ forloop.index }}">
+                <img src="{{ block.settings.gallery_item_image |  image_url: width: '1000x' }}" alt="">
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+      <div class="gallery-center-card">
+        <div class="gallery-card-inner">
+          {%- if section.settings.center_image != blank -%}
+            <div class="gallery-center-image">
+              <img src="{{ section.settings.center_image |  image_url: width: '1200x' }}" alt="">
+            </div>
+          {%- endif -%}
+          <div class="gallery-card-content">
+            {%- if section.settings.main_title != blank -%}
+              <h3 class="main-title">{{ section.settings.main_title }}</h3>
+            {%- endif -%}
+            {%- if section.settings.primary_text != blank -%}
+              <span class="primary-text">{{ section.settings.primary_text }}</span>
+            {%- endif -%}
+            {%- if section.settings.join_button != blank -%}
+              <a href="#" class="join-button">{{ section.settings.join_button }}</a>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Gallery With Images",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "gallery_image_1",
+      "label": "Gallery Image (desk)"
+    },
+    {
+      "type": "image_picker",
+      "id": "gallery_image_2",
+      "label": "Gallery Image (mob)"
+    },
+    {
+      "type": "image_picker",
+      "id": "center_image",
+      "label": "Center Image"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Main Title"
+    },
+    {
+      "type": "text",
+      "id": "primary_text",
+      "label": "Primary Text"
+    },
+    {
+      "type": "text",
+      "id": "join_button",
+      "label": "Join Button"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Gallery overlay",
+      "type": "gallery_overlay_img",
+      "limit": 4,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "gallery_item_image",
+          "label": "Gallery Item Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery With Images"
+    }
+  ]
+}
+{% endschema %}

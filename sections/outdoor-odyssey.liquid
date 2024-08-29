@@ -1,0 +1,61 @@
+{{ 'outdoor-odyssey.css' | asset_url | stylesheet_tag }}
+
+<div class="outdoor-odyssey">
+  <div class="page-width">
+    <div class="wrapper">
+      <div class="content">
+        {%- if section.settings.banner_title != blank -%}
+          <div class="banner-title">{{ section.settings.banner_title }}</div>
+        {%- endif -%}
+        {%- if section.settings.banner_text != blank -%}
+          <span class="banner-text">{{ section.settings.banner_text }}</span>
+        {%- endif -%}
+        {%- if section.settings.bottom_text != blank -%}
+          <span class="bottom-text">{{ section.settings.bottom_text }}</span>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  {%- render 'outdoor-gallery' -%}
+  <div class="background_svg">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2495" height="2523" viewBox="0 0 2495 2523" fill="none">
+      <g opacity="0.24">
+      <path d="M1178.11 0.000185533L1229.64 1142.57L1059.89 13.029L936.096 37.9436L1207.04 1148.36L822.625 74.0581L705.99 122.897L1185.94 1158.49L601.711 180.65L496.755 251.584L1167.26 1172.66L405.586 328.842L316.301 419.129L1151.66 1190.19L241.86 512.844L171.713 618.979L1139.76 1210.45L116.711 725.647L68.4139 843.591L1131.92 1232.7L35.0357 959.021L10.473 1084.2L1128.6 1256.01L-5.06607e-05 1203.98L-4.57562e-05 1331.67L1129.81 1279.56L12.8841 1451.22L37.5222 1576.4L1135.61 1302.41L73.2361 1691.14L121.533 1809.09L1145.63 1323.75L178.645 1914.54L248.792 2020.67L1159.57 1342.64L325.192 2112.86L414.402 2203.15L1176.98 1358.42L507.152 2278.43L612.109 2349.36L1197.02 1370.45L717.593 2404.98L834.228 2453.82L1219.02 1378.38L948.377 2487.57L1072.17 2512.41L1242.08 1381.73L1190.61 2523L1316.89 2523L1265.36 1380.51L1435.11 2509.97L1558.9 2485.06L1287.96 1374.64L1672.37 2448.94L1789.01 2400.1L1309.06 1364.51L1893.29 2342.35L1998.24 2271.42L1327.74 1350.42L2089.41 2194.16L2178.7 2103.95L1343.34 1332.82L2253.14 2010.16L2323.29 1904.02L1355.24 1312.55L2378.29 1797.35L2426.59 1679.41L1363 1290.3L2459.96 1563.98L2484.53 1438.8L1366.4 1266.99L2495 1319.02L2495 1191.33L1365.11 1243.44L2482.12 1071.78L2457.48 946.601L1359.39 1220.59L2421.76 831.857L2373.47 713.913L1349.37 1199.25L2316.35 608.464L2246.21 502.33L1335.35 1180.36L2169.81 410.138L2080.52 319.851L1318.02 1164.58L1987.85 244.574L1882.89 173.64L1297.98 1152.55L1777.41 118.02L1660.77 69.1823L1275.98 1144.7L1546.62 35.5055L1422.83 10.5907L1252.92 1141.27L1304.39 0.000179251L1178.11 0.000185533Z" fill="url(#paint0_radial_638_8)" style="mix-blend-mode:screen"/>
+      </g>
+      <defs>
+      <radialGradient id="paint0_radial_638_8" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1247.5 1261.5) rotate(-90) scale(1261.5 1247.5)">
+      <stop offset="0.285" stop-color="#393684"/>
+      <stop offset="0.95" stop-color="#17146B"/>
+      </radialGradient>
+      </defs>
+    </svg>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Outdoor Odyssey",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "banner_title",
+      "label": "Banner Title"
+    },
+    {
+      "type": "richtext",
+      "id": "banner_text",
+      "label": "Banner Text"
+    },
+    {
+      "type": "text",
+      "id": "bottom_text",
+      "label": "Bottom Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Outdoor Odyssey"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,144 @@
+{
+  "sections": {
+    "party-page": {
+      "type": "party-page",
+      "settings": {
+        "title": "DAZZLE <span> and </span> <span> DELIGHT </span> WITH us",
+        "text": "From power packed birthday parties to off-beat corporate events, BALLERS can be your one stop destination.",
+        "para_text": "Whatever the occasion, we will help you host the most fun filled parties."
+      }
+    },
+    "image_showcase_FG6fcT": {
+      "type": "image-showcase",
+      "blocks": {
+        "image_slide_H8aUmV": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "image_slide_PrAhYT": {
+          "type": "image-slide",
+          "settings": {
+            "image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_slide_H8aUmV",
+        "image_slide_PrAhYT"
+      ],
+      "settings": {
+        "select_option": "rotate"
+      }
+    },
+    "party-packages": {
+      "type": "party-packages",
+      "blocks": {
+        "slide_item_eebDbE": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_QtR9DB": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_cMKhqf": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_eWwEEt": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Special Menu Options",
+            "slide_image": "shopify://shop_images/Rectangle_6121_9.png"
+          }
+        },
+        "slide_item_eebDb1": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_QtR9D1": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_cMKhq1": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_eWwEE1": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Special Menu Options",
+            "slide_image": "shopify://shop_images/Rectangle_6121_9.png"
+          }
+        },
+        "slide_item_cMKhq2": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Theme based Decor",
+            "slide_image": "shopify://shop_images/Rectangle_6116_19.png"
+          }
+        },
+        "slide_item_eWwEE2": {
+          "type": "slide_item",
+          "settings": {
+            "slide_bg_image": "shopify://shop_images/Subtract_f407ca75-59dd-4485-8a50-8fc51853b60b.png",
+            "slide_title": "Special Menu Options",
+            "slide_image": "shopify://shop_images/Rectangle_6121_9.png"
+          }
+        }
+      },
+      "block_order": [
+        "slide_item_eebDbE",
+        "slide_item_QtR9DB",
+        "slide_item_cMKhqf",
+        "slide_item_eWwEEt",
+        "slide_item_eebDb1",
+        "slide_item_QtR9D1",
+        "slide_item_cMKhq1",
+        "slide_item_eWwEE1",
+        "slide_item_cMKhq2",
+        "slide_item_eWwEE2"
+      ],
+      "settings": {
+        "title": "party Packages",
+        "text": "Host the perfect parties with our offerings:",
+        "btn_url": "#",
+        "btn_text": "inquire now"
+      }
+    }
+  },
+  "order": [
+    "party-page",
+    "image_showcase_FG6fcT",
+    "party-packages"
+  ]
+}

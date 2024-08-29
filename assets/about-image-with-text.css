@@ -1,0 +1,140 @@
+.about-image-with-text{
+    position: relative;
+    background-color: #1d1a6f;
+    height: 100vh;
+    min-height: 1193px;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .about-image-with-text_spinner-svg {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.about-image-with-text_spinner-svg svg{
+    animation: rotate 20s linear infinite;
+}
+.about-image-with-text .page-width{
+    position: relative;
+}
+.about-image-with-text_corave_svg {
+    width: 100%;
+    position: absolute;
+    bottom: 99%;
+}
+.about-image-with-text svg {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.about-image-with-text_gift-image {
+    max-width: 167px;
+    position: absolute;
+    left: 37px;
+    top: -80px;
+}
+.about-image-with-text_text-image-wrap{
+    align-items: flex-end;
+    padding-top: 40px;
+    margin-bottom: 60px;
+}
+.about-image-with-text_image {
+    max-width: 286px;
+    flex: 286px;
+    margin-right: -50px;
+}
+.about-image-with-text img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.about-image-with-text_content-area {
+    max-width: 861px;
+    margin: 0 0 0 auto;
+    text-align: center;
+    padding-right: 50px;
+}
+.about-image-with-text_title {
+    font-family: "ICBM SS-20";
+    font-size: 60px;
+    line-height: 1.083;
+    color: rgb(254, 194, 24);
+    margin: 0px;
+    max-width: 634px;
+    margin: 0 auto 24px;
+}
+.about-image-with-text_title span {
+    color: #FDF0D2;
+}
+.about-image-with-text_description {
+    font-size: 18px;
+    line-height: 1.33;
+    color: rgb(253, 240, 210);
+    margin: 0;
+    letter-spacing: 0;
+}
+.about-image-with-text .swiper-container {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.about-image-with-text .swiper-slide {
+    max-width: 100%;
+    align-items: center;
+}
+.about-image-with-text .swiper-slide :last-child {
+    max-width: 361px !important;
+}
+.about-image-with-text .swiper-slide :first-child {
+    margin-left: 0;
+}
+.about-image-with-text_inner-image {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: -58px;
+    max-width: 337px;
+    flex: 337px;
+}
+.about-image-with-text .arrow-svg{
+    position: absolute;
+    top: 70%;
+    z-index: 111;
+}
+.about-image-with-text .arrow-right {
+    right: 50px;
+}
+ @media screen and (max-width:1279px) {
+    .about-image-with-text_title {
+        font-size: 56px;
+        max-width: 610px;
+    }
+    .about-image-with-text_content-area {
+        max-width: 800px;
+        padding-right: 20px;
+    }
+    .about-image-with-text_description {
+        font-size: 17px;
+        line-height: 1.33;
+        color: #fdf0d2;
+        margin: 0;
+        letter-spacing: 0;
+    }
+} 
+@media screen and (max-width:990px) {
+    .about-image-with-text_title {
+        font-size: 40px;
+        max-width: 392px;
+    }
+    .about-image-with-text_description {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,658 @@
+{% comment %}theme-check-disable UndefinedObject{% endcomment %}
+{{ 'custom-footer.css' | asset_url | stylesheet_tag }}
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+{{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-menu.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-payment.css' | asset_url | stylesheet_tag }}
+{{ 'component-list-social.css' | asset_url | stylesheet_tag }}
+<div class="main_footer-wrapper">
+  <div class="footer_cover-svg desktop">
+    <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="288" viewBox="0 0 1440 288" fill="none">
+      <path d="M58.4369 106.533C24.8731 115.333 5.49407 145.866 0 160.033V267H1439.95V20.0326C1441.11 11.5326 1424.16 -4.16736 1347.05 1.03264C1269.93 6.23264 1245.32 86.866 1242.66 126.533L1236.17 114.533C1231.84 104.033 1215.09 83.9326 1182.72 87.5326C1150.36 91.1326 1138.94 122.366 1137.27 137.533L1135.27 133.033C1129.78 110.366 1104.01 64.4326 1044.87 62.0326C985.736 59.6326 952.305 110.033 942.982 135.533L940.484 133.033C925.168 109.199 878.252 61.6326 813.122 62.0326C747.992 62.4326 708.069 119.866 696.248 148.533L693.251 145.033C684.095 134.533 654.893 113.733 611.34 114.533C567.787 115.333 542.248 166.199 534.922 191.533L533.424 189.533C526.432 180.699 505.055 161.233 475.487 154.033C445.918 146.833 419.547 162.033 410.057 170.533L408.559 167.033L393.575 133.033C380.423 111.699 337.835 67.4327 272.706 61.0327C207.576 54.6327 160.66 116.033 145.343 147.533L141.847 143.033C128.028 127.199 92.0007 97.7327 58.4369 106.533Z" fill="#FDF0D2"/>
+      <path d="M49.5326 141.533C15.3395 150.333 -4.40292 180.866 -10 195.033V288H1456.94V55.0326C1458.13 46.5326 1440.87 30.8326 1362.3 36.0326C1283.74 41.2326 1258.67 121.866 1255.96 161.533L1249.34 149.533C1244.93 139.033 1227.87 118.933 1194.9 122.533C1161.93 126.133 1150.29 157.366 1148.6 172.533L1146.56 168.033C1140.96 145.366 1114.71 99.4326 1054.46 97.0326C994.218 94.6326 960.161 145.033 950.663 170.533L948.118 168.033C932.514 144.199 884.719 96.6326 818.368 97.0326C752.017 97.4326 711.345 154.866 699.303 183.533L696.25 180.033C686.921 169.533 657.172 148.733 612.802 149.533C568.433 150.333 542.415 201.199 534.952 226.533L533.426 224.533C526.302 215.699 504.524 196.233 474.402 189.033C444.279 181.833 417.413 197.033 407.746 205.533L406.219 202.033L390.955 168.033C377.555 146.699 334.17 102.433 267.819 96.0327C201.468 89.6327 153.672 151.033 138.068 182.533L134.506 178.033C120.429 162.199 83.7257 132.733 49.5326 141.533Z" fill="#FEC218"/>
+    </svg>
+  </div>
+  <div class="footer_cover-svg mobile">
+    <svg width="390" height="136" viewBox="0 0 390 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clip-path="url(#clip0_495_312)">
+      <path d="M-37.5265 50.2739C-53.3062 54.4267 -62.417 68.8357 -65 75.521V126H611.974V9.4536C612.522 5.44237 604.554 -1.96662 568.298 0.487313C532.043 2.94125 520.474 40.9929 519.222 59.712L516.169 54.0491C514.134 49.0941 506.26 39.6087 491.044 41.3075C475.828 43.0064 470.458 57.7457 469.676 64.903L468.736 62.7794C466.154 52.0828 454.037 30.4064 426.235 29.2738C398.433 28.1412 382.716 51.9255 378.332 63.9592L377.158 62.7794C369.957 51.5323 347.9 29.0851 317.28 29.2738C286.66 29.4626 267.891 56.566 262.333 70.0941L260.924 68.4424C256.619 63.4873 242.891 53.6716 222.415 54.0491C201.939 54.4266 189.932 78.4311 186.488 90.3862L185.783 89.4424C182.496 85.2738 172.446 76.0873 158.545 72.6896C144.644 69.2918 132.245 76.4648 127.784 80.4761L127.079 78.8244L120.035 62.7794C113.851 52.712 93.8295 31.8222 63.2095 28.802C32.5895 25.7817 10.5324 54.757 3.33142 69.6222L1.68771 67.4986C-4.80886 60.0267 -21.7469 46.121 -37.5265 50.2739Z" fill="#FDF0D2"/>
+      <path d="M-41.0396 67.1083C-57.0989 71.2474 -66.3712 85.6089 -69 92.2723V136H619.974V26.4225C620.531 22.4244 612.422 15.0399 575.524 17.4857C538.626 19.9316 526.852 57.8579 525.577 76.5154L522.471 70.8711C520.4 65.9323 512.386 56.4782 496.9 58.1715C481.414 59.8648 475.95 74.5555 475.153 81.6893L474.197 79.5727C471.568 68.9113 459.237 47.3063 430.942 46.1774C402.647 45.0486 386.652 68.7545 382.191 80.7486L380.996 79.5727C373.667 68.3625 351.219 45.9893 320.056 46.1774C288.894 46.3655 269.791 73.3796 264.135 86.8632L262.702 85.2169C258.32 80.2782 244.348 70.4948 223.509 70.8711C202.67 71.2474 190.451 95.1728 186.945 107.088L186.229 106.148C182.883 101.993 172.655 92.8367 158.507 89.4501C144.36 86.0636 131.742 93.213 127.201 97.211L126.484 95.5648L119.315 79.5727C113.022 69.5384 92.6448 48.7174 61.482 45.7071C30.3193 42.6968 7.87128 71.5766 0.54261 86.3929L-1.13023 84.2762C-7.74195 76.8289 -24.9802 62.9691 -41.0396 67.1083Z" fill="#FEC218"/>
+      </g>
+      <defs>
+      <clipPath id="clip0_495_312">
+      <rect width="390" height="136" fill="white"/>
+      </clipPath>
+      </defs>
+    </svg>
+  </div>
+  <footer class="cus-footer footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+    {%- liquid
+      assign has_social_icons = true
+      if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
+        assign has_social_icons = false
+      endif
+
+      if settings.brand_image == blank and settings.brand_headline == blank and settings.brand_description == blank
+        assign brand_empty = true
+      endif
+
+      if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
+        assign only_empty_brand = true
+      endif
+    -%}
+    {%- if section.blocks.size > 0
+      or section.settings.newsletter_enable
+      or section.settings.show_social
+      and has_social_icons == true
+      or section.settings.enable_follow_on_shop
+    -%}
+      {%- unless only_empty_brand -%}
+        <div class="page-width">
+          <div class="footer__content-top">
+            {%- if section.blocks.size > 0 -%}
+              {%- liquid
+                if section.blocks.size == 9
+                  assign footer_grid_class = 'grid--3-col-tablet'
+                elsif section.blocks.size > 6
+                  assign footer_grid_class = 'grid--4-col-desktop'
+                elsif section.blocks.size > 4
+                  assign footer_grid_class = 'grid--3-col-tablet'
+                endif
+              -%}
+              <div
+                class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                {% endif %}
+              >
+                {%- if section.settings.footer_left_image != blank -%}
+                  <div class="footer__blocks-left">
+                    <div class="footer__blocks-image-wrapper">
+                      {%- if section.settings.footer_left_image != blank -%}
+                        <div class="footer__blocks-image">
+                          <img src="{{- section.settings.footer_left_image | image_url:width: '1000x'-}}" alt="">
+                        </div>
+                      {%- endif -%}
+                      {%- if section.settings.footer_logo != blank -%}
+                        <a href="" class="footer__blocks-logo">
+                          <img src="{{- section.settings.footer_logo | image_url:width: '800x' -}}" alt="">
+                        </a>
+                      {%- endif -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+                <div class="grid__item-wrapper">
+                  {%- if section.settings.footer_right_image != blank -%}
+                    <div class="footer__blocks-rigth-image">
+                      <img src="{{- section.settings.footer_right_image | image_url:width: '1200x' -}}" alt="">
+                    </div>
+                  {%- endif -%}
+                  {%- for block in section.blocks -%}
+                    <div
+                      class="footer-block grid__item{% if block.type == 'link_list' %} footer-block--menu{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                      {{ block.shopify_attributes }}
+                      {% if settings.animations_reveal_on_scroll %}
+                        data-cascade
+                        style="--animation-order: {{ forloop.index }};"
+                      {% endif %}
+                    >
+                      {% comment %}
+                        {%- if block.settings.heading != blank -%}
+                          <h2 class="footer-block__heading inline-richtext">{{- block.settings.heading -}}</h2>
+                        {%- endif -%}
+                      {% endcomment %}
+
+                      {%- case block.type -%}
+                        {%- when '@app' -%}
+                          {% render block %}
+                        {%- when 'text' -%}
+                          <div class="footer-block__details-content rte">
+                            {{ block.settings.subtext }}
+                          </div>
+                        {%- when 'link_list' -%}
+                          {%- if block.settings.menu != blank -%}
+                            <ul class="footer-block__details-content list-unstyled">
+                              {%- for link in block.settings.menu.links -%}
+                                <li>
+                                  <a
+                                    href="{{ link.url }}"
+                                    class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
+                                  >
+                                    {{ link.title }}
+                                  </a>
+                                </li>
+                              {%- endfor -%}
+                            </ul>
+                          {%- endif -%}
+                        {%- when 'brand_information' -%}
+                          <div class="footer-block__brand-info">
+                            {%- if settings.brand_image != blank -%}
+                              {%- assign brand_image_height = settings.brand_image_width
+                                | divided_by: settings.brand_image.aspect_ratio
+                              -%}
+                              <div
+                                class="footer-block__image-wrapper"
+                                style="max-width: min(100%, {{ settings.brand_image_width }}px);"
+                              >
+                                {{
+                                  settings.brand_image
+                                  | image_url: width: 1100
+                                  | image_tag:
+                                    loading: 'lazy',
+                                    widths: '50, 100, 150, 200, 300, 400, 550, 800, 1100',
+                                    height: brand_image_height,
+                                    width: settings.brand_image_width
+                                }}
+                              </div>
+                            {%- endif -%}
+                            {% comment %}
+                              {%- if settings.brand_headline != blank -%}
+                                <h2 class="footer-block__heading rte">{{ settings.brand_headline }}</h2>
+                              {%- endif -%}
+                            {% endcomment %}
+                            {%- if settings.brand_description != blank -%}
+                              <div class="rte">{{ settings.brand_description }}</div>
+                            {%- endif -%}
+                            {%- if block.settings.show_social and has_social_icons -%}
+                              {%- render 'social-icons', class: 'footer__list-social' -%}
+                            {%- endif -%}
+                          </div>
+                        {%- when 'image' -%}
+                          <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
+                            {%- if block.settings.image != blank -%}
+                              {%- assign image_size_2x = block.settings.image_width | times: 2 | at_most: 5760 -%}
+                              <div
+                                class="footer-block__image-wrapper"
+                                style="max-width: min(100%, {{ block.settings.image_width }}px);"
+                              >
+                                <img
+                                  srcset="{{ block.settings.image | image_url: width: block.settings.image_width }}, {{ block.settings.image | image_url: width: image_size_2x }} 2x"
+                                  src="{{ block.settings.image | image_url: width: 760 }}"
+                                  alt="{{ block.settings.image.alt | escape }}"
+                                  loading="lazy"
+                                  width="{{ block.settings.image.width }}"
+                                  height="{{ block.settings.image.height }}"
+                                >
+                              </div>
+                            {%- else -%}
+                              {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+                            {%- endif -%}
+                          </div>
+                      {%- endcase -%}
+                    </div>
+                  {%- endfor -%}
+                </div>
+              </div>
+            {%- endif -%}
+
+            {% comment %}
+              <div
+                class="footer-block--newsletter{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                {% if settings.animations_reveal_on_scroll %}
+                  data-cascade
+                {% endif %}
+              >
+                  {%- if section.settings.newsletter_enable -%}
+                    <div class="footer-block__newsletter">
+                      {%- if section.settings.newsletter_heading != blank -%}
+                        <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+                      {%- endif -%}
+                      {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <div class="newsletter-form__field-wrapper">
+                          <div class="field">
+                            <input
+                              id="NewsletterForm--{{ section.id }}"
+                              type="email"
+                              name="contact[email]"
+                              class="field__input"
+                              value="{{ form.email }}"
+                              aria-required="true"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              autocomplete="email"
+                              {% if form.errors %}
+                                autofocus
+                                aria-invalid="true"
+                                aria-describedby="ContactFooter-error"
+                              {% elsif form.posted_successfully? %}
+                                aria-describedby="ContactFooter-success"
+                              {% endif %}
+                              placeholder="{{ 'newsletter.label' | t }}"
+                              required
+                            >
+                            <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                              {{ 'newsletter.label' | t }}
+                            </label>
+                            <button
+                              type="submit"
+                              class="newsletter-form__button field__button"
+                              name="commit"
+                              id="Subscribe"
+                              aria-label="{{ 'newsletter.button_label' | t }}"
+                            >
+                              {% render 'icon-arrow' %}
+                            </button>
+                          </div>
+                          {%- if form.errors -%}
+                            <small class="newsletter-form__message form__message" id="ContactFooter-error">
+                              {%- render 'icon-error' -%}
+                              {{- form.errors.translated_fields.email | capitalize }}
+                              {{ form.errors.messages.email -}}
+                            </small>
+                          {%- endif -%}
+                        </div>
+                        {%- if form.posted_successfully? -%}
+                          <h3
+                            class="newsletter-form__message newsletter-form__message--success form__message"
+                            id="ContactFooter-success"
+                            tabindex="-1"
+                            autofocus
+                          >
+                            {% render 'icon-success' -%}
+                            {{- 'newsletter.success' | t }}
+                          </h3>
+                        {%- endif -%}
+                      {%- endform -%}
+                    </div>
+                  {%- endif -%}
+
+                {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+                  <div class="footer__follow-on-shop">
+                    {% comment %} TODO: enable theme-check once `login_button` is accepted as valid filter {% endcomment %}
+                    {% # theme-check-disable %}
+                    {{ shop | login_button: action: 'follow' }}
+                    {% # theme-check-enable %}
+                  </div>
+                {%- endif -%}
+
+                {%- if section.settings.show_social and has_social_icons -%}
+                  {%- render 'social-icons', class: 'footer__list-social' -%}
+                {%- endif -%}
+              </div>
+            {% endcomment %}
+          </div>
+        </div>
+      {%- endunless -%}
+      <div class="footer__content-animation">
+        <div class="pacman-loader" aria-live="polite"></div>
+      </div>
+    {%- endif -%}
+
+    <div
+      class="cus-footer__content footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+      {% if settings.animations_reveal_on_scroll %}
+        data-cascade
+      {% endif %}
+    >
+      {% comment %}
+        <div class="footer__content-bottom-wrapper page-width">
+          <div class="footer__column footer__localization isolate">
+            {%- if section.settings.enable_country_selector and localization.available_countries.size > 1 -%}
+              <noscript>
+                {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
+                  <div class="localization-form__select">
+                    <h2 class="visually-hidden" id="FooterCountryLabelNoScript">{{ 'localization.country_label' | t }}</h2>
+                    <select
+                      class="localization-selector link"
+                      name="country_code"
+                      aria-labelledby="FooterCountryLabelNoScript"
+                    >
+                      {%- for country in localization.available_countries -%}
+                        <option
+                          value="{{ country.iso_code }}"
+                          {%- if country.iso_code == localization.country.iso_code %}
+                            selected
+                          {% endif %}
+                        >
+                          {{ country.name }} ({{ country.currency.iso_code }}
+                          {{ country.currency.symbol }})
+                        </option>
+                      {%- endfor -%}
+                    </select>
+                    {% render 'icon-caret' %}
+                  </div>
+                  <button class="button button--tertiary">{{ 'localization.update_country' | t }}</button>
+                {%- endform -%}
+              </noscript>
+              <localization-form>
+                {%- form 'localization', id: 'FooterCountryForm', class: 'localization-form' -%}
+                  <div class="no-js-hidden">
+                    <h2 class="caption-large text-body" id="FooterCountryLabel">{{ 'localization.country_label' | t }}</h2>
+                    {%- render 'country-localization', localPosition: 'FooterCountry' -%}
+                  </div>
+                {%- endform -%}
+              </localization-form>
+            {%- endif -%}
+
+            {%- if section.settings.enable_language_selector and localization.available_languages.size > 1 -%}
+              <noscript>
+                {%- form 'localization', id: 'FooterLanguageFormNoScript', class: 'localization-form' -%}
+                  <div class="localization-form__select">
+                    <h2 class="visually-hidden" id="FooterLanguageLabelNoScript">
+                      {{ 'localization.language_label' | t }}
+                    </h2>
+                    <select
+                      class="localization-selector link"
+                      name="locale_code"
+                      aria-labelledby="FooterLanguageLabelNoScript"
+                    >
+                      {%- for language in localization.available_languages -%}
+                        <option
+                          value="{{ language.iso_code }}"
+                          lang="{{ language.iso_code }}"
+                          {%- if language.iso_code == localization.language.iso_code %}
+                            selected
+                          {% endif %}
+                        >
+                          {{ language.endonym_name | capitalize }}
+                        </option>
+                      {%- endfor -%}
+                    </select>
+                    {% render 'icon-caret' %}
+                  </div>
+                  <button class="button button--tertiary">{{ 'localization.update_language' | t }}</button>
+                {%- endform -%}
+              </noscript>
+
+              <localization-form>
+                {%- form 'localization', id: 'FooterLanguageForm', class: 'localization-form' -%}
+                  <div class="no-js-hidden">
+                    <h2 class="caption-large text-body" id="FooterLanguageLabel">
+                      {{ 'localization.language_label' | t }}
+                    </h2>
+                    {%- render 'language-localization', localPosition: 'FooterLanguage' -%}
+                  </div>
+                {%- endform -%}
+              </localization-form>
+            {%- endif -%}
+          </div>
+          <div class="footer__column footer__column--info">
+            {%- if section.settings.payment_enable -%}
+              <div class="footer__payment">
+                <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
+                <ul class="list list-payment" role="list">
+                  {%- for type in shop.enabled_payment_types -%}
+                    <li class="list-payment__item">
+                      {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      {% endcomment %}
+      <div class="page-width">
+        <div class="footer__content-bottom-wrapper{% if section.settings.enable_country_selector == false and section.settings.enable_language_selector == false %} footer__content-bottom-wrapper--center{% endif %}">
+          <div class="footer__copyright caption">
+            <small class="copyright__content">Copyright © 2024 Ballers </small>
+          </div>
+          <div class="icon_wrapper">
+            <a href="" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="43" viewBox="0 0 35 43" fill="none">
+                <path d="M12.4143 14.5696C11.1061 15.5871 11.9492 18 13.6062 18C14.5656 18 14.9144 17.7674 15.3796 16.9244C16.3098 15.151 14.0423 13.3486 12.4143 14.5696Z" fill="#151515"/>
+                <path d="M26.9479 14.744C25.8141 15.965 26.6862 18 28.2852 18C29.8841 18 30.7271 16.2267 29.7678 14.8603C29.2154 14.0463 27.6165 13.9882 26.9479 14.744Z" fill="#151515"/>
+                <path d="M13.053 0.703022C10.6982 1.28445 8.51787 2.33101 6.45381 3.90086C4.36068 5.49977 2.96526 7.18591 1.74427 9.68603C0.174427 12.8548 0 14.4828 0 25.7043C0 36.4897 0.0872137 37.42 1.45356 40.0945C2.76177 42.6819 3.98276 43.3505 5.11653 42.0714C5.72703 41.3737 5.84332 41.1702 7.35502 37.7398C7.90737 36.5188 8.66322 35.2396 9.04115 34.9199C10.4366 33.5826 12.2099 34.3675 13.2855 36.8095C13.6344 37.5653 14.2449 38.9898 14.681 39.9492C15.5822 42.0132 16.1636 42.7109 16.9776 42.7109C18.1695 42.7109 18.8091 41.8679 20.0591 38.7863C21.6871 34.7164 22.85 33.6989 24.8559 34.6291C25.5827 34.9489 26.0769 35.8792 27.9084 40.0073C28.7514 41.926 29.4782 42.7109 30.3794 42.7109C31.3388 42.7109 32.6179 40.9376 33.49 38.4084C34.1296 36.5188 34.1587 36.199 34.1587 25.4136C34.1587 15.384 34.1005 14.1921 33.6063 12.6222C32.0656 7.76733 29.4201 4.48228 25.2047 2.27287C21.5708 0.38324 16.9195 -0.227257 13.053 0.703022ZM14.0123 11.9536C15.6112 12.8548 16.3962 14.2793 16.3962 16.1689C16.309 21.4308 8.98301 22.7681 7.12245 17.855C5.46539 13.5234 9.94236 9.68603 14.0123 11.9536ZM28.6642 11.9245C31.833 13.8723 31.8039 18.4365 28.6352 20.268C27.1816 21.111 24.6233 21.0238 23.3151 20.0645C22.3267 19.3958 21.222 17.2445 21.222 16.0526C21.222 14.3665 22.6465 12.3606 24.4198 11.5466C25.3792 11.1105 27.7049 11.314 28.6642 11.9245Z" fill="#DB1C0B"/>
+                <path d="M10.291 11.923C9.27352 12.2137 7.90718 13.4638 7.52925 14.4522C6.83154 16.2255 7.41297 18.2314 9.01188 19.5687C10.6399 20.9351 13.6633 20.499 15.0878 18.6966C15.8727 17.6791 15.8727 17.2721 15.0587 17.8244C13.1691 19.1617 10.8724 17.3302 11.7736 15.208C12.326 13.8708 13.8086 13.4928 15.0587 14.394C15.989 15.0336 15.8436 14.4231 14.7971 13.2312C14.3028 12.6498 13.4307 12.0683 12.8493 11.8939C11.6283 11.5741 11.512 11.5741 10.291 11.923Z" fill="#ECECEC"/>
+                <path d="M24.8866 11.8945C22.9388 12.505 21.5434 14.8597 21.9213 16.9529C22.6772 20.9065 28.2298 21.5752 30.1194 17.9413C30.7009 16.8366 30.6427 16.7494 29.7996 17.5633C28.9275 18.4355 27.9391 18.4936 26.9216 17.6796C26.3692 17.2436 26.1657 16.8075 26.1657 16.1098C26.1657 14.1039 28.4042 13.2317 29.7996 14.6562C30.6427 15.4702 30.7009 15.383 30.0613 14.0457C29.2473 12.3596 26.7762 11.3421 24.8866 11.8945Z" fill="#ECECEC"/>
+              </svg>
+            </a>
+            <a href="" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="43" viewBox="0 0 35 43" fill="none">
+                <path d="M12.4143 14.5696C11.1061 15.5871 11.9492 18 13.6062 18C14.5656 18 14.9144 17.7674 15.3796 16.9244C16.3098 15.151 14.0423 13.3486 12.4143 14.5696Z" fill="#151515"/>
+                <path d="M26.9479 14.744C25.8141 15.965 26.6862 18 28.2852 18C29.8841 18 30.7271 16.2267 29.7678 14.8603C29.2154 14.0463 27.6165 13.9882 26.9479 14.744Z" fill="#151515"/>
+                <path d="M13.053 0.703022C10.6982 1.28445 8.51787 2.33101 6.45381 3.90086C4.36068 5.49977 2.96526 7.18591 1.74427 9.68603C0.174427 12.8548 0 14.4828 0 25.7043C0 36.4897 0.0872137 37.42 1.45356 40.0945C2.76177 42.6819 3.98276 43.3505 5.11653 42.0714C5.72703 41.3737 5.84332 41.1702 7.35502 37.7398C7.90737 36.5188 8.66322 35.2396 9.04115 34.9199C10.4366 33.5826 12.2099 34.3675 13.2855 36.8095C13.6344 37.5653 14.2449 38.9898 14.681 39.9492C15.5822 42.0132 16.1636 42.7109 16.9776 42.7109C18.1695 42.7109 18.8091 41.8679 20.0591 38.7863C21.6871 34.7164 22.85 33.6989 24.8559 34.6291C25.5827 34.9489 26.0769 35.8792 27.9084 40.0073C28.7514 41.926 29.4782 42.7109 30.3794 42.7109C31.3388 42.7109 32.6179 40.9376 33.49 38.4084C34.1296 36.5188 34.1587 36.199 34.1587 25.4136C34.1587 15.384 34.1005 14.1921 33.6063 12.6222C32.0656 7.76733 29.4201 4.48228 25.2047 2.27287C21.5708 0.38324 16.9195 -0.227257 13.053 0.703022ZM14.0123 11.9536C15.6112 12.8548 16.3962 14.2793 16.3962 16.1689C16.309 21.4308 8.98301 22.7681 7.12245 17.855C5.46539 13.5234 9.94236 9.68603 14.0123 11.9536ZM28.6642 11.9245C31.833 13.8723 31.8039 18.4365 28.6352 20.268C27.1816 21.111 24.6233 21.0238 23.3151 20.0645C22.3267 19.3958 21.222 17.2445 21.222 16.0526C21.222 14.3665 22.6465 12.3606 24.4198 11.5466C25.3792 11.1105 27.7049 11.314 28.6642 11.9245Z" fill="#FB16C8"/>
+                <path d="M10.291 11.923C9.27352 12.2137 7.90718 13.4638 7.52925 14.4522C6.83154 16.2255 7.41297 18.2314 9.01188 19.5687C10.6399 20.9351 13.6633 20.499 15.0878 18.6966C15.8727 17.6791 15.8727 17.2721 15.0587 17.8244C13.1691 19.1617 10.8724 17.3302 11.7736 15.208C12.326 13.8708 13.8086 13.4928 15.0587 14.394C15.989 15.0336 15.8436 14.4231 14.7971 13.2312C14.3028 12.6498 13.4307 12.0683 12.8493 11.8939C11.6283 11.5741 11.512 11.5741 10.291 11.923Z" fill="#ECECEC"/>
+                <path d="M24.8866 11.8945C22.9388 12.505 21.5434 14.8597 21.9213 16.9529C22.6772 20.9065 28.2298 21.5752 30.1194 17.9413C30.7009 16.8366 30.6427 16.7494 29.7996 17.5633C28.9275 18.4355 27.9391 18.4936 26.9216 17.6796C26.3692 17.2436 26.1657 16.8075 26.1657 16.1098C26.1657 14.1039 28.4042 13.2317 29.7996 14.6562C30.6427 15.4702 30.7009 15.383 30.0613 14.0457C29.2473 12.3596 26.7762 11.3421 24.8866 11.8945Z" fill="#ECECEC"/>
+              </svg>
+            </a>
+            <a href="" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="43" viewBox="0 0 35 43" fill="none">
+                <path d="M12.4143 14.5696C11.1061 15.5871 11.9492 18 13.6062 18C14.5656 18 14.9144 17.7674 15.3796 16.9244C16.3098 15.151 14.0423 13.3486 12.4143 14.5696Z" fill="#151515"/>
+                <path d="M26.9479 14.744C25.8141 15.965 26.6862 18 28.2852 18C29.8841 18 30.7271 16.2267 29.7678 14.8603C29.2154 14.0463 27.6165 13.9882 26.9479 14.744Z" fill="#151515"/>
+                <path d="M13.053 0.703022C10.6982 1.28445 8.51787 2.33101 6.45381 3.90086C4.36068 5.49977 2.96526 7.18591 1.74427 9.68603C0.174427 12.8548 0 14.4828 0 25.7043C0 36.4897 0.0872137 37.42 1.45356 40.0945C2.76177 42.6819 3.98276 43.3505 5.11653 42.0714C5.72703 41.3737 5.84332 41.1702 7.35502 37.7398C7.90737 36.5188 8.66322 35.2396 9.04115 34.9199C10.4366 33.5826 12.2099 34.3675 13.2855 36.8095C13.6344 37.5653 14.2449 38.9898 14.681 39.9492C15.5822 42.0132 16.1636 42.7109 16.9776 42.7109C18.1695 42.7109 18.8091 41.8679 20.0591 38.7863C21.6871 34.7164 22.85 33.6989 24.8559 34.6291C25.5827 34.9489 26.0769 35.8792 27.9084 40.0073C28.7514 41.926 29.4782 42.7109 30.3794 42.7109C31.3388 42.7109 32.6179 40.9376 33.49 38.4084C34.1296 36.5188 34.1587 36.199 34.1587 25.4136C34.1587 15.384 34.1005 14.1921 33.6063 12.6222C32.0656 7.76733 29.4201 4.48228 25.2047 2.27287C21.5708 0.38324 16.9195 -0.227257 13.053 0.703022ZM14.0123 11.9536C15.6112 12.8548 16.3962 14.2793 16.3962 16.1689C16.309 21.4308 8.98301 22.7681 7.12245 17.855C5.46539 13.5234 9.94236 9.68603 14.0123 11.9536ZM28.6642 11.9245C31.833 13.8723 31.8039 18.4365 28.6352 20.268C27.1816 21.111 24.6233 21.0238 23.3151 20.0645C22.3267 19.3958 21.222 17.2445 21.222 16.0526C21.222 14.3665 22.6465 12.3606 24.4198 11.5466C25.3792 11.1105 27.7049 11.314 28.6642 11.9245Z" fill="#4BFFFF"/>
+                <path d="M10.291 11.923C9.27352 12.2137 7.90718 13.4638 7.52925 14.4522C6.83154 16.2255 7.41297 18.2314 9.01188 19.5687C10.6399 20.9351 13.6633 20.499 15.0878 18.6966C15.8727 17.6791 15.8727 17.2721 15.0587 17.8244C13.1691 19.1617 10.8724 17.3302 11.7736 15.208C12.326 13.8708 13.8086 13.4928 15.0587 14.394C15.989 15.0336 15.8436 14.4231 14.7971 13.2312C14.3028 12.6498 13.4307 12.0683 12.8493 11.8939C11.6283 11.5741 11.512 11.5741 10.291 11.923Z" fill="#ECECEC"/>
+                <path d="M24.8866 11.8945C22.9388 12.505 21.5434 14.8597 21.9213 16.9529C22.6772 20.9065 28.2298 21.5752 30.1194 17.9413C30.7009 16.8366 30.6427 16.7494 29.7996 17.5633C28.9275 18.4355 27.9391 18.4936 26.9216 17.6796C26.3692 17.2436 26.1657 16.8075 26.1657 16.1098C26.1657 14.1039 28.4042 13.2317 29.7996 14.6562C30.6427 15.4702 30.7009 15.383 30.0613 14.0457C29.2473 12.3596 26.7762 11.3421 24.8866 11.8945Z" fill="#ECECEC"/>
+              </svg>
+            </a>
+            <a href="" class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="35" height="43" viewBox="0 0 35 43" fill="none">
+                <path d="M12.4143 14.5696C11.1061 15.5871 11.9492 18 13.6062 18C14.5656 18 14.9144 17.7674 15.3796 16.9244C16.3098 15.151 14.0423 13.3486 12.4143 14.5696Z" fill="#151515"/>
+                <path d="M26.9479 14.744C25.8141 15.965 26.6862 18 28.2852 18C29.8841 18 30.7271 16.2267 29.7678 14.8603C29.2154 14.0463 27.6165 13.9882 26.9479 14.744Z" fill="#151515"/>
+                <path d="M13.053 0.703022C10.6982 1.28445 8.51787 2.33101 6.45381 3.90086C4.36068 5.49977 2.96526 7.18591 1.74427 9.68603C0.174427 12.8548 0 14.4828 0 25.7043C0 36.4897 0.0872137 37.42 1.45356 40.0945C2.76177 42.6819 3.98276 43.3505 5.11653 42.0714C5.72703 41.3737 5.84332 41.1702 7.35502 37.7398C7.90737 36.5188 8.66322 35.2396 9.04115 34.9199C10.4366 33.5826 12.2099 34.3675 13.2855 36.8095C13.6344 37.5653 14.2449 38.9898 14.681 39.9492C15.5822 42.0132 16.1636 42.7109 16.9776 42.7109C18.1695 42.7109 18.8091 41.8679 20.0591 38.7863C21.6871 34.7164 22.85 33.6989 24.8559 34.6291C25.5827 34.9489 26.0769 35.8792 27.9084 40.0073C28.7514 41.926 29.4782 42.7109 30.3794 42.7109C31.3388 42.7109 32.6179 40.9376 33.49 38.4084C34.1296 36.5188 34.1587 36.199 34.1587 25.4136C34.1587 15.384 34.1005 14.1921 33.6063 12.6222C32.0656 7.76733 29.4201 4.48228 25.2047 2.27287C21.5708 0.38324 16.9195 -0.227257 13.053 0.703022ZM14.0123 11.9536C15.6112 12.8548 16.3962 14.2793 16.3962 16.1689C16.309 21.4308 8.98301 22.7681 7.12245 17.855C5.46539 13.5234 9.94236 9.68603 14.0123 11.9536ZM28.6642 11.9245C31.833 13.8723 31.8039 18.4365 28.6352 20.268C27.1816 21.111 24.6233 21.0238 23.3151 20.0645C22.3267 19.3958 21.222 17.2445 21.222 16.0526C21.222 14.3665 22.6465 12.3606 24.4198 11.5466C25.3792 11.1105 27.7049 11.314 28.6642 11.9245Z" fill="#023683"/>
+                <path d="M10.291 11.923C9.27352 12.2137 7.90718 13.4638 7.52925 14.4522C6.83154 16.2255 7.41297 18.2314 9.01188 19.5687C10.6399 20.9351 13.6633 20.499 15.0878 18.6966C15.8727 17.6791 15.8727 17.2721 15.0587 17.8244C13.1691 19.1617 10.8724 17.3302 11.7736 15.208C12.326 13.8708 13.8086 13.4928 15.0587 14.394C15.989 15.0336 15.8436 14.4231 14.7971 13.2312C14.3028 12.6498 13.4307 12.0683 12.8493 11.8939C11.6283 11.5741 11.512 11.5741 10.291 11.923Z" fill="#ECECEC"/>
+                <path d="M24.8866 11.8945C22.9388 12.505 21.5434 14.8597 21.9213 16.9529C22.6772 20.9065 28.2298 21.5752 30.1194 17.9413C30.7009 16.8366 30.6427 16.7494 29.7996 17.5633C28.9275 18.4355 27.9391 18.4936 26.9216 17.6796C26.3692 17.2436 26.1657 16.8075 26.1657 16.1098C26.1657 14.1039 28.4042 13.2317 29.7996 14.6562C30.6427 15.4702 30.7009 15.383 30.0613 14.0457C29.2473 12.3596 26.7762 11.3421 24.8866 11.8945Z" fill="#ECECEC"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.footer.name",
+  "blocks": [
+    {
+      "type": "@app"
+    },
+    {
+      "type": "link_list",
+      "name": "t:sections.footer.blocks.link_list.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Quick links",
+          "label": "t:sections.footer.blocks.link_list.settings.heading.label"
+        },
+        {
+          "type": "link_list",
+          "id": "menu",
+          "default": "footer",
+          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
+          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
+        }
+      ]
+    },
+    {
+      "type": "brand_information",
+      "name": "t:sections.footer.blocks.brand_information.name",
+      "settings": [
+        {
+          "type": "paragraph",
+          "content": "t:sections.footer.blocks.brand_information.settings.paragraph.content"
+        },
+        {
+          "type": "header",
+          "content": "t:sections.footer.blocks.brand_information.settings.header__1.content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_social",
+          "default": true,
+          "label": "t:sections.footer.blocks.brand_information.settings.show_social.label",
+          "info": "t:sections.footer.blocks.brand_information.settings.show_social.info"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "t:sections.footer.blocks.text.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "default": "Heading",
+          "label": "t:sections.footer.blocks.text.settings.heading.label"
+        },
+        {
+          "type": "richtext",
+          "id": "subtext",
+          "default": "<p>Share contact information, store details, and brand content with your customers.</p>",
+          "label": "t:sections.footer.blocks.text.settings.subtext.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 50,
+          "max": 550,
+          "step": 5,
+          "unit": "px",
+          "label": "Image width",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "alignment",
+          "label": "Image alignment on large screen",
+          "options": [
+            {
+              "value": "",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_left_image",
+      "label": "Footer Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_logo",
+      "label": "Footer Logo"
+    },
+    {
+      "type": "image_picker",
+      "id": "footer_right_image",
+      "label": "Footer Right Image"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__1.content",
+      "info": "t:sections.footer.settings.header__1.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "newsletter_enable",
+      "default": true,
+      "label": "t:sections.footer.settings.newsletter_enable.label"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "newsletter_heading",
+      "default": "Subscribe to our emails",
+      "label": "t:sections.footer.settings.newsletter_heading.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__9.content",
+      "info": "t:sections.footer.settings.header__9.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_follow_on_shop",
+      "default": true,
+      "label": "t:sections.footer.settings.enable_follow_on_shop.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__2.content",
+      "info": "t:sections.footer.settings.header__2.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_social",
+      "default": true,
+      "label": "t:sections.footer.settings.show_social.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__3.content",
+      "info": "t:sections.footer.settings.header__4.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_country_selector",
+      "default": true,
+      "label": "t:sections.footer.settings.enable_country_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__5.content",
+      "info": "t:sections.footer.settings.header__6.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_language_selector",
+      "default": true,
+      "label": "t:sections.footer.settings.enable_language_selector.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__7.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "payment_enable",
+      "default": true,
+      "label": "t:sections.footer.settings.payment_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.footer.settings.header__8.content",
+      "info": "t:sections.footer.settings.header__8.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_policy",
+      "default": false,
+      "label": "t:sections.footer.settings.show_policy.label"
+    }
+  ],
+  "default": {
+    "blocks": [
+      {
+        "type": "link_list"
+      },
+      {
+        "type": "text"
+      }
+    ]
+  }
+}
+{% endschema %}

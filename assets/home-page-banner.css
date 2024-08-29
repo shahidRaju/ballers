@@ -1,0 +1,86 @@
+.home-page-banner {
+    height: 917px;
+    width: 100%;
+    position: relative;
+}
+.home-page-banner svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.home-page-banner_text-image-wrap {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 785px;
+}
+.home-page-banner_frame-image {
+    position: relative;
+    margin-bottom: 145px;
+}
+.home-page-banner img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 100%;
+}
+.home-page-banner_content-area {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 493px;
+}
+.home-page-banner_title {
+    font-family: 'ICBM SS-20';
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+    text-transform: capitalize;
+    color: #DB1C0B;
+    margin: 0;
+    text-shadow: 2px 2px 0px #857B7B99;
+}
+.home-page-banner_title span {
+    color: #fec218;
+}
+@media screen and (max-width:990px) {
+    .home-page-banner_text-image-wrap {
+        max-width: 720px;
+    }
+    .home-page-banner_title  {
+        font-size: 75px;
+    }
+    .home-page-banner_frame-image {
+        margin-bottom: 108px;
+    }
+}
+@media screen and (max-width:767px) {
+    .home-page-banner_text-image-wrap {
+        max-width: 85%;
+    }
+    .home-page-banner_content-area {
+        max-width: 340px;
+    }
+    .home-page-banner {
+        height: 112.4vw;
+    }
+    .home-page-banner_title  {
+        font-size: 50px;
+    }
+    .home-page-banner_frame-image {
+        position: relative;
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width:580px) {
+    .home-page-banner_content-area {
+        max-width: 260px;
+    }
+    .home-page-banner_title {
+        font-size: 38px;
+    }
+}

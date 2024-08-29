@@ -1,0 +1,51 @@
+{{ 'about-page-banner.css' | asset_url | stylesheet_tag }}
+<div class="about-page-banner">
+  <div class="about-page-banner_wrapper flex">
+    <div class="about-page-banner_text-image-wrap flex">
+      <div class="about-page-banner_alpha">
+        {% if section.settings.image != blank %}
+          <div class="about-page-banner_image">
+            <img src="{{  section.settings.image |  image_url: width: '1600x'  }}" alt="">
+          </div>
+        {% endif %}
+      </div>
+      <div class="about-page-banner_beta">
+        <div class="about-page-banner_content-area flex">
+          {% if section.settings.title != blank %}
+            <h1 class="about-page-banner_title">{{ section.settings.title }}</h1>
+          {% endif %}
+          {% if section.settings.description != blank %}
+            <p class="about-page-banner_description">{{ section.settings.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "About Page Banner",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "html",
+        "id": "title",
+        "label": "Title",
+        "info": "Use '<span></span>' this to change the color of text. Means write text between these two tags"
+      }, {
+        "type": "textarea",
+        "id": "description",
+        "label": "Description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "About Page Banner"
+      }
+    ]
+  }
+{% endschema %}

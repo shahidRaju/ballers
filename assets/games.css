@@ -1,0 +1,500 @@
+.games .title {
+  margin: 0 0 102px 0;
+  text-align: center;
+  color: #FEC218;
+}
+.games {
+  background-color: #17146B;
+  padding: 100px 0 385px;
+  position: relative;
+}
+.games .card_grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 36px;
+  grid-row-gap: 48px;
+}
+.games .card_grid-item {
+  border-radius: 13px;
+  overflow: hidden;
+  border: 6px solid #FDF0D2;
+  position: relative;
+  height: 100%;
+}
+.games .card_grid-item:nth-child(even) {
+  margin-top: -42px;
+}
+.games img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.games .image {
+  height: 100%;
+  width: 100%;
+}
+.games .card_title {
+  color: #FDF0D2;
+  font-family: "ICBM SS-20";
+  font-size: 22px;
+  font-weight: 400;
+  background: linear-gradient(360deg, #000000 -14.06%, rgba(0, 0, 0, 0) 54.84%);
+  line-height: 1.36;
+  text-align: center;
+  display: flex;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  letter-spacing: 0;
+  padding: 0 12px 14px;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.games .overlay {
+  position: absolute;
+  width: 100%;
+}
+.games .animated-card {
+  transition: all ease-in-out 0.2s;
+}
+
+.games .top-right {
+  right: 0;
+  top: 0;
+  max-width: 176px;
+}
+.games .left {
+  left: 0;
+  top: 30%;
+  max-width: 82px;
+}
+.games .bottom-right {
+  width: 81px;
+  right: 0;
+  bottom: 31%;
+}
+.games .btn {
+  color: #FDF0D2;
+  display: block;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: ICBM SS-20;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  border: 2px solid #FDF0D2;
+  border-radius: 40px;
+  max-width: fit-content;
+  margin: 50px auto 0;
+}
+.games .wrapper {
+  max-width: 1144px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width:991px){
+  :root {
+    --color1: rgb(0, 231, 255);
+    --color2: rgb(255, 0, 231);
+    --back: url(https://cdn2.bulbagarden.net/upload/1/17/Cardback.jpg);
+    --charizard1: #fac;
+    --charizard2: #ddccaa;
+    --charizardfront: url(https://assets.codepen.io/13471/charizard-gx.webp);
+    --pika1: #54a29e;
+    --pika2: #a79d66;
+    --pikafront: url(https://assets.codepen.io/13471/pikachu-gx.webp);
+    --eevee1: #efb2fb;
+    --eevee2: #acc6f8;
+    --eeveefront: url(https://assets.codepen.io/13471/eevee-gx.webp);
+    --mewtwo1: #efb2fb;
+    --mewtwo2: #acc6f8;
+    --mewtwofront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
+  }
+  .games .card {
+    position: relative;
+    overflow: hidden;
+    overflow: hidden;
+    z-index: 10;
+    touch-action: none;
+    transition: transform 0.5s ease, box-shadow 0.2s ease;
+    will-change: transform, filter;
+    transform-origin: center;
+    perspective: 4500px;
+  } 
+  .games .card:hover {
+    box-shadow: -20px -20px 30px -25px var(--color1), 20px 20px 30px -25px var(--color2), -7px -7px 10px -5px var(--color1), 7px 7px 10px -5px var(--color2), 0 0 13px 4px rgba(255, 255, 255, 0.3), 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  }
+  .games  .card.eevee {
+    --color1: #ec9bb6;
+    --color2: #ccac6f;
+    --color3: #69e4a5;
+    --color4: #8ec5d6;
+    --color5: #b98cce;
+    --front: var(--eeveefront);
+  }
+  .games .card:before,
+  .games .card:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    mix-blend-mode: color-dodge;
+    transition: all 0.33s ease;
+  } 
+  .games .card:before {
+    background-position: 50% 50%;
+    background-size: 300% 300%;
+    opacity: 0.5;
+    filter: brightness(0.5) contrast(1);
+    z-index: 1;
+  }
+  .games .card:after {
+    opacity: 1;
+    background-image: url("https://assets.codepen.io/13471/sparkles.gif"), url(https://assets.codepen.io/13471/holo.png), linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%);
+    background-position: 50% 50%;
+    background-size: 160%;
+    background-blend-mode: overlay;
+    z-index: 2;
+    filter: brightness(1) contrast(1);
+    transition: all 0.33s ease;
+    mix-blend-mode: color-dodge;
+    opacity: 0.75;
+  }
+  .games .card.active:after,
+  .games .card:hover:after {
+    filter: brightness(1) contrast(1);
+    opacity: 1;
+  }
+  .games .card.active,
+  .games .card:hover {
+    -webkit-animation: none;
+            animation: none;
+    transition: box-shadow 0.1s ease-out;
+  }
+  .animated-card.active:before,
+  .animated-card:hover:before {
+    -webkit-animation: none;
+            animation: none;
+    background-image: linear-gradient(110deg, transparent 25%, var(--color1) 48%, var(--color2) 52%, transparent 75%);
+    background-position: 50% 50%;
+    background-size: 250% 250%;
+    opacity: 0.88;
+    filter: brightness(0.66) contrast(1.33);
+    transition: none;
+  }
+  .games .card.active:before,
+  .games .card:hover:before,
+  .games .card.active:after,
+  .games .card:hover:after {
+    -webkit-animation: none;
+    animation: none;
+    transition: none;
+  }
+  .games .card.animated {
+    transition: none;
+    -webkit-animation: holoCard 12s ease 0s 1;
+    animation: holoCard 12s ease 0s 1;
+  }
+  .games .card.animated:before {
+    transition: none;
+    -webkit-animation: holoGradient 12s ease 0s 1;
+    animation: holoGradient 12s ease 0s 1;
+  }
+  .games .card.animated:after {
+    transition: none;
+    -webkit-animation: holoSparkle 12s ease 0s 1;
+    animation: holoSparkle 12s ease 0s 1;
+  }
+  @-webkit-keyframes holoSparkle {
+    0%, 100% {
+      opacity: 0.75;
+      background-position: 50% 50%;
+      filter: brightness(1.2) contrast(1.25);
+    }
+    5%, 8% {
+      opacity: 1;
+      background-position: 40% 40%;
+      filter: brightness(0.8) contrast(1.2);
+    }
+    13%, 16% {
+      opacity: 0.5;
+      background-position: 50% 50%;
+      filter: brightness(1.2) contrast(0.8);
+    }
+    35%, 38% {
+      opacity: 1;
+      background-position: 60% 60%;
+      filter: brightness(1) contrast(1);
+    }
+    55% {
+      opacity: 0.33;
+      background-position: 45% 45%;
+      filter: brightness(1.2) contrast(1.25);
+    }
+  }
+  @keyframes holoSparkle {
+    0%, 100% {
+      opacity: 0.75;
+      background-position: 50% 50%;
+      filter: brightness(1.2) contrast(1.25);
+    }
+    5%, 8% {
+      opacity: 1;
+      background-position: 40% 40%;
+      filter: brightness(0.8) contrast(1.2);
+    }
+    13%, 16% {
+      opacity: 0.5;
+      background-position: 50% 50%;
+      filter: brightness(1.2) contrast(0.8);
+    }
+    35%, 38% {
+      opacity: 1;
+      background-position: 60% 60%;
+      filter: brightness(1) contrast(1);
+    }
+    55% {
+      opacity: 0.33;
+      background-position: 45% 45%;
+      filter: brightness(1.2) contrast(1.25);
+    }
+  }
+  @-webkit-keyframes holoGradient {
+    0%, 100% {
+      opacity: 0.5;
+      background-position: 50% 50%;
+      filter: brightness(0.5) contrast(1);
+    }
+    5%, 9% {
+      background-position: 100% 100%;
+      opacity: 1;
+      filter: brightness(0.75) contrast(1.25);
+    }
+    13%, 17% {
+      background-position: 0% 0%;
+      opacity: 0.88;
+    }
+    35%, 39% {
+      background-position: 100% 100%;
+      opacity: 1;
+      filter: brightness(0.5) contrast(1);
+    }
+    55% {
+      background-position: 0% 0%;
+      opacity: 1;
+      filter: brightness(0.75) contrast(1.25);
+    }
+  }
+  @keyframes holoGradient {
+    0%, 100% {
+      opacity: 0.5;
+      background-position: 50% 50%;
+      filter: brightness(0.5) contrast(1);
+    }
+    5%, 9% {
+      background-position: 100% 100%;
+      opacity: 1;
+      filter: brightness(0.75) contrast(1.25);
+    }
+    13%, 17% {
+      background-position: 0% 0%;
+      opacity: 0.88;
+    }
+    35%, 39% {
+      background-position: 100% 100%;
+      opacity: 1;
+      filter: brightness(0.5) contrast(1);
+    }
+    55% {
+      background-position: 0% 0%;
+      opacity: 1;
+      filter: brightness(0.75) contrast(1.25);
+    }
+  }
+  @-webkit-keyframes holoCard {
+    0%, 100% {
+      transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    5%, 8% {
+      transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+    }
+    13%, 16% {
+      transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+    }
+    35%, 38% {
+      transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+    }
+    55% {
+      transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+    }
+  }
+  @keyframes holoCard {
+    0%, 100% {
+      transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    5%, 8% {
+      transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+    }
+    13%, 16% {
+      transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+    }
+    35%, 38% {
+      transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+    }
+    55% {
+      transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+    }
+  }
+  .games .card.eevee:hover {
+    box-shadow: 0 0 30px -5px white, 0 0 10px -2px white, 0 55px 35px -20px rgba(0, 0, 0, 0.5);
+  }
+  .games .card.eevee:hover:before,
+  .games .card.eevee.active:before {
+    background-image: linear-gradient(115deg, transparent 20%, var(--color1) 36%, var(--color2) 43%, var(--color3) 50%, var(--color4) 57%, var(--color5) 64%, transparent 80%);
+  }
+  .games .cards {
+    position: relative;
+    z-index: 1;
+    transform: translate3d(0.1px, 0.1px, 0.1px);
+  }
+  .games .cards .card,
+  .games .cards .card:before,
+  .games .cards .card:after {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+  }
+  @-webkit-keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+}
+
+@media screen and (max-width:1359px){
+  .games .wrapper {
+      max-width: 1000px;
+  }
+}
+
+@media screen and (max-width:1279px){
+  .games .wrapper {
+    max-width: 850px;
+  }
+  .games .card_grid-wrapper {
+    grid-column-gap: 26px;
+    grid-row-gap: 38px;
+  }
+  .games .card_title {
+    font-size: 18px;
+    padding: 0 5px 14px;
+  }
+}
+
+@media screen and (max-width:990px){
+  .games {
+    padding: 40px 0 200px;
+  }
+  .games .title {
+    margin: 0 0 42px 0;
+    text-align: center;
+    color: #FEC218;
+    font-size: 40px;
+    line-height: 1.4;
+  }
+  .games .top-right {
+    display: none;
+  }
+  .games .card_grid-item:nth-child(even) {
+    margin-top: -27px;
+  }
+  .games .card_grid-wrapper {
+    grid-column-gap: 18px;
+    grid-row-gap: 23px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .games .card_grid-item {
+    border: 4px solid #FDF0D2;
+  }
+  .games .card_title {
+    font-size: 16px;
+    padding: 0 7px 10px;
+    line-height: 1.25;
+  }
+  .games .left {
+    left: -5px;
+    top: -12px;
+    max-width: 44px;
+  }
+  .games .bottom-right {
+    width: 52px;
+    right: 0;
+    bottom: 230px;
+  }
+  .games .btn {
+    font-size: 13px;
+    line-height: 1.3;
+    padding: 10px 22px;
+    margin: 40px auto 0;
+  }
+}
+
+@media screen and (max-width:530px){
+  .games {
+    padding: 40px 0 140px;
+  }
+  .games .bottom-right {
+    bottom: 180px;
+  }
+}

@@ -1,0 +1,110 @@
+{{ "custom-richtext.css" | asset_url |  stylesheet_tag }}
+
+<div class="custom-richtext">
+    <div class="page-width">
+        <div class="custom-richtext__wrapper">
+            <div class="custom-richtext__content">
+                <div class="main-grid">
+                    {% if section.settings.left_image != blank %}
+                        <div class="left-image">
+                            <img src="{{ section.settings.left_image |  image_url: width: "200X" }}" alt="">
+                        </div>
+                    {% endif %}
+                    <div class="inner-wrap">
+                        <div class="row-wrap">
+                            {% if section.settings.left_text != blank %}
+                                <p class="text">{{ section.settings.left_text  }}</p>
+                            {% endif %}
+                            {% if section.settings.center_image != blank %}
+                                <div class="center-image">
+                                    <img src="{{ section.settings.center_image |  image_url: width: "300X" }}" alt="">
+                                </div>
+                            {% endif %}
+                            {% if section.settings.right_text != blank %}
+                                <p class="text">{{ section.settings.right_text  }}</p>
+                            {% endif %}
+                        </div>
+                        {% if section.settings.sub_text != blank %}
+                            <p class="sub-text text">{{ section.settings.sub_text  }}</p>
+                        {% endif %}
+                    </div>
+                    {% if section.settings.right_image != blank %}
+                        <div class="right-image">
+                            <img src="{{ section.settings.right_image |  image_url: width: "200X" }}" alt="">
+                        </div>
+                    {% endif %}
+                </div>
+                {% if section.settings.richtext != blank %}
+                    <div class="richtext">{{ section.settings.richtext }}</div>
+                {% endif %}
+            </div>
+            {%- if section.settings.left_overlay != blank -%}
+                <div class="overlay overlay1 up-down-animation">
+                    <img src="{{ section.settings.left_overlay | img_url: '200X' }}" alt="">
+                </div>
+            {%- endif -%}
+            {%- if section.settings.right_overlay != blank -%}
+                <div class="overlay overlay2 up-down-animation">
+                    <img src="{{ section.settings.right_overlay | img_url: '170X' }}" alt="">
+                 </div>
+            {%- endif -%}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Custom Richtext",
+    "settings": [
+            {
+                "type": "image_picker",
+                "id": "left_image",
+                "label": "Left Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "center_image",
+                "label": "Center Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "right_image",
+                "label": "Right Image"
+            },
+            {
+                "type": "text",
+                "id": "left_text",
+                "label": "Left Text"
+            },
+            {
+                "type": "text",
+                "id": "right_text",
+                "label": "Right Text"
+            },
+            {
+                "type": "text",
+                "id": "sub_text",
+                "label": "Sub Text"
+            },
+            {
+                "type": "richtext",
+                "id": "richtext",
+                "label": "Buttom text"
+            },
+            {
+              "type": "image_picker",
+              "id": "left_overlay",
+              "label": "Left Overlay"
+            },
+            {
+              "type": "image_picker",
+              "id": "right_overlay",
+              "label": "Right Overlay"
+            }
+        ],
+        "presets": [
+            {
+               "name": "Custom Richtext"  
+            }
+        ]
+}
+{% endschema %}
